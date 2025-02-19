@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+
+
+  /* animation degradé mouvement debut*/
+
+  @keyframes pulse-slow {
+  
+      0%,
+      100% {
+        opacity: 0.2;
+      }
+  
+      50% {
+        opacity: 0.4;
+      }
+    }
+  
+    @keyframes glow {
+  
+      0%,
+      100% {
+        opacity: 0.7;
+        transform: scale(1);
+      }
+  
+      50% {
+        opacity: 1;
+        transform: scale(1.02);
+      }
+    }
+  
+    .animate-pulse-slow {
+      animation: pulse-slow 3s ease-in-out infinite;
+    }
+  
+    .animate-pulse-slow-delayed {
+      animation: pulse-slow 3s ease-in-out infinite 3s;
+    }
+  
+    .animate-glow {
+      animation: glow 4s ease-in-out infinite;
+    }
+
+    /* animation degradé mouvement fin*/
+
+        .glow-effect {
+          transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+    
+        .group:hover .glow-effect:hover {
+          transform: translateY(-5px);
+          box-shadow: 0 0 30px rgba(255, 255, 255, 0.1);
+        }
+    
+        /* Effet d'illumination au survol */
+        .glow-effect:hover::before {
+          content: '';
+          position: absolute;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          background: radial-gradient(circle at var(--x) var(--y),
+              rgba(255, 255, 255, 0.1) 0%,
+              transparent 70%);
+          pointer-events: none;
+          z-index: 1;
+        }
+
+
+        /* effet curseur fin */
+        
+
+  @keyframes blink {
+  
+      0%,
+      100% {
+        border-color: transparent
+      }
+  
+      50% {
+        border-color: #8b5cf6
+      }
+    }
+  
+    .animate-blink {
+      animation: blink 1s step-end infinite;
+    }
+  
+    /* Conserver les styles existants pour les étoiles */
+    @keyframes shooting-star {
+      0% {
+        transform: translateX(0) translateY(0);
+        opacity: 1;
+      }
+  
+      100% {
+        transform: translateX(-100vw) translateY(100vh);
+        opacity: 0;
+      }
+    }
+  
+    .animate-shooting-star {
+      animation: shooting-star 1.5s linear;
+    }
+
+
+
+
+  
+    
+
+  .text-code-keyword {
+      color: #c678dd;
+    }
+  
+    /* Violet/Magenta pour les mots-clés (const, let, function...) */
+    .text-code-variable {
+      color: #abb2bf;
+    }
+  
+    /* Gris clair pour les noms de variables */
+    .text-code-operator {
+      color: #e06c75;
+    }
+  
+    /* Rouge/Rose pour les opérateurs (=, +, -, ...) */
+    .text-code-string {
+      color: #98c379;
+    }
+  
+    /* Vert pour les chaînes de caractères */
+    .text-code-punctuation {
+      color: #abb2bf;
+    }
+  
+    /* Gris clair pour la ponctuation (;, ., {}, []) */
+    .text-code-comment {
+      color: #5c6370;
+      font-style: italic;
+    }
+  
+    /* Gris foncé et italique pour les commentaires */
+
+    
+  .bg-grid-animated {
+    background-image: linear-gradient(0deg, transparent 24%, rgba(90, 90, 90, 0.1) 25%, rgba(90, 90, 90, 0.1) 26%, transparent 27%, transparent 74%, rgba(90, 90, 90, 0.1) 75%, rgba(90, 90, 90, 0.1) 76%, transparent 77%, transparent),
+    linear-gradient(90deg, transparent 24%, rgba(90, 90, 90, 0.1) 25%, rgba(90, 90, 90, 0.1) 26%, transparent 27%, transparent 74%, rgba(90, 90, 90, 0.1) 75%, rgba(90, 90, 90, 0.1) 76%, transparent 77%, transparent);
+    background-size: 100px 140px;
+    animation: grid-pan 200s linear infinite;
+    /* Animation de déplacement de la grille */
+  }
+
+  @keyframes grid-pan {
+    0% {
+      background-position: 0% 0%;
+    }
+
+    100% {
+      background-position: 100% 100%;
+    }
+  }
+}

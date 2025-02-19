@@ -1,0 +1,53 @@
+.mac-screen-mockup {
+    background-color: #282c34;
+    /* Fond sombre de l'écran */
+    border-radius: 8px;
+    /* Bords arrondis de l'écran */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    /* Ombre légère pour le relief */
+    overflow: hidden;
+    /* Important pour que les boutons restent dans le cadre arrondi */
+}
+
+.mac-screen-header {
+    background-color: #3c4149;
+    /* Barre d'en-tête légèrement plus claire */
+    padding: 8px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    display: flex;
+    /* Flexbox pour aligner les boutons horizontalement */
+    gap: 8px;
+    /* Espace entre les boutons */
+    align-items: center;
+    /* Centrer verticalement les boutons */
+    padding-left: 16px;
+    /* Marge à gauche pour les boutons */
+}
+
+.mac-btn {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    /* Rend les boutons circulaires */
+}
+
+.mac-btn-close {
+    background-color: #ff5f56;
+    /* Rouge pour le bouton "fermer" */
+}
+
+.mac-btn-minimize {
+    background-color: #ffbd2e;
+    /* Jaune pour le bouton "réduire" */
+}
+
+.mac-btn-maximize {
+    background-color: #27c93f;
+    /* Vert pour le bouton "agrandir" */
+}
+
+.mac-screen-content {
+    padding: 20px;
+    /* Marge intérieure pour le contenu du code */
+}

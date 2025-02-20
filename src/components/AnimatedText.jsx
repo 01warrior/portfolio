@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 
 function AnimatedText() {
 
-  const words = ["React", "Flutter", "Dart", "Docker", "Node.js"];
+  const words = ["React", "Flutter", "Dart", "Docker", "Node.js","SpringBoot","Java","Tailwind"];
 
   const [currentWordIndex, setCurrentWordIndex] = useState(0);
   const [currentText, setCurrentText] = useState("");
@@ -60,7 +60,7 @@ function AnimatedText() {
         </p>
       </div>
 
-      <p className="text-base md:text-xl mt-4 bg-gradient-to-r from-blue-300 to-yellow-400 bg-clip-text text-transparent">
+      <p className="text-base md:text-2xl mt-4 bg-gradient-to-r from-blue-300 to-yellow-400 bg-clip-text text-transparent">
         Bienvenue sur mon portfolio !
       </p>
     </div>

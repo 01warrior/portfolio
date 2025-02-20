@@ -39,8 +39,8 @@ export function CursorEffect() {
         style={{
           left: `${position.x}px`,
           top: `${position.y}px`,
-          width: isHovering ? '80px' : '40px',
-          height: isHovering ? '80px' : '40px',
+          width: isHovering ? '80px' : '70px',
+          height: isHovering ? '80px' : '70px',
           background: 'radial-gradient(circle, rgba(255,255,255,0.2) 0%, rgba(255,255,255,0) 70%)',
           filter: 'blur(20px)'
         }}
@@ -226,6 +226,7 @@ function App() {
           <p className="text-gray-400">Application web moderne avec React et TypeScript</p>
       </div>
 
+      
     </div>
   </div>
 </section>

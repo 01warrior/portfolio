@@ -226,68 +226,6 @@ function App() {
           <p className="text-gray-400">Application web moderne avec React et TypeScript</p>
       </div>
 
-      <div className="bg-gray-700/50 rounded-lg p-6 transition-all duration-300 hover:bg-gray-700/70 relative glow-effect">
-        {/* Conteneur d'image avec overflow hidden */}
-          <div className="h-48 w-full mb-4 rounded-lg overflow-hidden relative">
-          <img 
-            src="../../assets/image.png" // Chemin relatif depuis le dossier public
-            alt="Projet React" 
-            className="w-full h-full object-cover object-center transition-transform duration-300 hover:scale-105"
-            loading="lazy"
-          />
-          
-          {/* Overlay au survol */}
-          <div className="absolute inset-0 bg-black/50 opacity-0 hover:opacity-100 transition-opacity flex items-center justify-center">
-            <span className="text-white font-bold text-lg">Voir le projet →</span>
-          </div>
-          </div>
-
-          <h3 className="text-xl font-semibold mb-2">Projet React</h3>
-          <p className="text-gray-400">Application web moderne avec React et TypeScript</p>
-      </div>
-
-      <div className="bg-gray-700/50 rounded-lg p-6 transition-all duration-300 hover:bg-gray-700/70 relative glow-effect">
-        {/* Conteneur d'image avec overflow hidden */}
-          <div className="h-48 w-full mb-4 rounded-lg overflow-hidden relative">
-          <img 
-            src="../../assets/image.png" // Chemin relatif depuis le dossier public
-            alt="Projet React" 
-            className="w-full h-full object-cover object-center transition-transform duration-300 hover:scale-105"
-            loading="lazy"
-          />
-          
-          {/* Overlay au survol */}
-          <div className="absolute inset-0 bg-black/50 opacity-0 hover:opacity-100 transition-opacity flex items-center justify-center">
-            <span className="text-white font-bold text-lg">Voir le projet →</span>
-          </div>
-          </div>
-
-          <h3 className="text-xl font-semibold mb-2">Projet React</h3>
-          <p className="text-gray-400">Application web moderne avec React et TypeScript</p>
-      </div>
-
-      <div className="bg-gray-700/50 rounded-lg p-6 transition-all duration-300 hover:bg-gray-700/70 relative glow-effect">
-        {/* Conteneur d'image avec overflow hidden */}
-          <div className="h-48 w-full mb-4 rounded-lg overflow-hidden relative">
-          <img 
-            src="../../assets/image.png" // Chemin relatif depuis le dossier public
-            alt="Projet React" 
-            className="w-full h-full object-cover object-center transition-transform duration-300 hover:scale-105"
-            loading="lazy"
-          />
-          
-          {/* Overlay au survol */}
-          <div className="absolute inset-0 bg-black/50 opacity-0 hover:opacity-100 transition-opacity flex items-center justify-center">
-            <span className="text-white font-bold text-lg">Voir le projet →</span>
-          </div>
-          </div>
-
-          <h3 className="text-xl font-semibold mb-2">Projet React</h3>
-          <p className="text-gray-400">Application web moderne avec React et TypeScript</p>
-      </div>
-      
-      
-      {/* Ajoutez d'autres cartes ici */}
     </div>
   </div>
 </section>
@@ -303,18 +241,18 @@ function App() {
 
     <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8">
       {[
-        { name: 'Docker', icon: '../../assets/docker.png', color: 'from-blue-500 to-cyan-400' },
-        { name: 'Flutter',icon: '../../assets/flutter.png', color: 'from-green-500 to-emerald-400' },
-        { name: 'SpringBoot',icon: '../../assets/spring.png', color: 'from-yellow-400 to-orange-400' },
-        { name: 'React.js', icon: '../../assets/react.png', color: 'from-sky-400 to-blue-600' },
-        { name: 'TailWind', icon: '../../assets/tailwindcss.png', color: 'from-blue-400 to-purple-500' },
-        { name: 'Python', icon: '../../assets/python.png', color: 'from-purple-500 to-pink-400' },
-        { name: 'Wordpress',icon: '../../assets/wop.png', color: 'from-blue-400 to-sky-600' },
-        { name: 'Supabase', icon: '../../assets/supabase.png', color: 'from-green-500 to-emerald-400' },
-        { name: 'Canva', icon: '../../assets/canva.png', color: 'from-green-500 to-emerald-400' },
-        { name: 'Figma', icon: '../../assets/figma.png', color: 'from-green-500 to-emerald-400' },
-        { name: 'MySQL', icon: '../../assets/mysql.png', color: 'from-green-500 to-emerald-400' },
-        { name: 'Node.Js', icon: '../../assets/nodejs.svg', color: 'from-green-500 to-emerald-400' },
+        { name: 'Docker', icon: 'https://github.com/01warrior/portfolio/blob/main/assets/docker.png?raw=true', color: 'from-blue-500 to-cyan-400' },
+        { name: 'Flutter',icon: 'https://github.com/01warrior/portfolio/blob/main/assets/flutter.png?raw=true', color: 'from-green-500 to-emerald-400' },
+        { name: 'SpringBoot',icon: 'https://github.com/01warrior/portfolio/blob/main/assets/spring.png?raw=true', color: 'from-yellow-400 to-orange-400' },
+        { name: 'React.js', icon: 'https://github.com/01warrior/portfolio/blob/main/assets/react.png?raw=true', color: 'from-sky-400 to-blue-600' },
+        { name: 'TailWind', icon: 'https://github.com/01warrior/portfolio/blob/main/assets/tailwindcss.png?raw=true', color: 'from-blue-400 to-purple-500' },
+        { name: 'Python', icon: 'https://github.com/01warrior/portfolio/blob/main/assets/python.png?raw=true', color: 'from-purple-500 to-pink-400' },
+        { name: 'Wordpress',icon: 'https://github.com/01warrior/portfolio/blob/main/assets/wop.png?raw=true', color: 'from-blue-400 to-sky-600' },
+        { name: 'Supabase', icon: 'https://github.com/01warrior/portfolio/blob/main/assets/supabase.png?raw=true', color: 'from-green-500 to-emerald-400' },
+        { name: 'Canva', icon: 'https://github.com/01warrior/portfolio/blob/main/assets/canva.png?raw=true', color: 'from-green-500 to-emerald-400' },
+        { name: 'Figma', icon: 'https://github.com/01warrior/portfolio/blob/main/assets/figma.png?raw=true', color: 'from-green-500 to-emerald-400' },
+        { name: 'MySQL', icon: 'https://github.com/01warrior/portfolio/blob/main/assets/mysql.png?raw=true', color: 'from-green-500 to-emerald-400' },
+        { name: 'Node.Js', icon: 'https://raw.githubusercontent.com/01warrior/portfolio/18aff3fa26c9d423d48d58c8de82a4fe00d8829f/assets/nodejs.svg', color: 'from-green-500 to-emerald-400' },
         
 
         

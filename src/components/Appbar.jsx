@@ -20,7 +20,7 @@ function Appbar() {
   };
 
   return (
-    <nav className="fixed w-full z-50 bg-gray-900/80 backdrop-blur-sm border-b border-gray-700 font-Poppins">
+    <nav className="fixed w-full z-50 bg-gray-900/80 backdrop-blur-sm border-b border-gray-700 font-Poppins relative">
       <div className="container mx-auto px-4">
         <div className="flex justify-between items-center h-16">
           {/* Logo avec animation au hover */}

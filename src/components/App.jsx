@@ -88,9 +88,12 @@ function App() {
       <MacScreenMockup>
         <div className="text-sm md:text-lg font-mono p-4 md:p-6">
           <div className="text-sm md:text-lg font-mono p-4 md:p-6">
-                  <p><span className="text-code-keyword">const</span> <span className="text-code-variable">name</span> <span className="text-code-operator">=</span> <span className="text-code-string">"Soumaila SAVADOGO"</span><span className="text-code-punctuation">;</span></p>
-                  <p><span className="text-code-keyword">const</span> <span className="text-code-variable">role</span> <span className="text-code-operator">=</span> <span className="text-code-string">"Développeur Full Stack"</span><span className="text-code-punctuation">;</span></p>
-                  <p><span className="text-code-keyword">const</span> <span className="text-code-variable">Pause</span> <span className="text-code-operator">=</span> <span className="text-code-string">95% de chance que vous soyez satisfait</span><span className="text-code-punctuation">;</span></p>
+                 <p><span className="text-code-keyword">const</span> <span className="text-code-variable">moi</span> <span className="text-code-operator">=</span> <span className="text-code-string">"Soumaila SAVADOGO"</span><span className="text-code-punctuation">;</span></p>
+<p><span className="text-code-keyword">const</span> <span className="text-code-variable">superPouvoir</span> <span className="text-code-operator">=</span> <span className="text-code-string">"Full-Stack Wizard 🧙♂️💻"</span><span className="text-code-punctuation">;</span></p>
+<p><span className="text-code-keyword">const</span> <span className="text-code-variable">vibeCheck</span> <span className="text-code-operator">=</span> <span className="text-code-string">"95% de chance que vous kiffiez le résultat 🚀🔥"</span><span className="text-code-punctuation">;</span></p>
+<p><span className="text-code-keyword">let</span> <span className="text-code-variable">créativité</span> <span className="text-code-operator">=</span> <span className="text-code-number">Infinity</span><span className="text-code-punctuation">;</span></p>
+<p><span className="text-code-keyword">const</span> <span className="text-code-variable">café</span> <span className="text-code-operator">=</span> <span className="text-code-string">"Code Fuel ☕️⚡️"</span><span className="text-code-punctuation">;</span></p>
+<p><span className="text-code-comment">// PS: Mon code est plus propre que mon bureau 😅</span></p>
                   <p><span className="text-code-comment">// Bienvenue sur mon portfolio 😉!</span></p>
           </div>
         </div>

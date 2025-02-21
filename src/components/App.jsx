@@ -90,7 +90,7 @@ function App() {
           <div className="text-sm md:text-lg font-mono p-4 md:p-6">
                   <p><span className="text-code-keyword">const</span> <span className="text-code-variable">name</span> <span className="text-code-operator">=</span> <span className="text-code-string">"Soumaila SAVADOGO"</span><span className="text-code-punctuation">;</span></p>
                   <p><span className="text-code-keyword">const</span> <span className="text-code-variable">role</span> <span className="text-code-operator">=</span> <span className="text-code-string">"Développeur Full Stack"</span><span className="text-code-punctuation">;</span></p>
-                  <p><span className="text-code-keyword">const</span> <span className="text-code-variable">skills</span> <span className="text-code-operator">=</span> <span className="text-code-string">["React", "Flutter", "Dart", "Docker", "Node.js","SpringBoot","Java","TailWind",]</span><span className="text-code-punctuation">;</span></p>
+                  <p><span className="text-code-keyword">const</span> <span className="text-code-variable">Pause</span> <span className="text-code-operator">=</span> <span className="text-code-string">95% de chance que vous soyez satisfait</span><span className="text-code-punctuation">;</span></p>
                   <p><span className="text-code-comment">// Bienvenue sur mon portfolio 😉!</span></p>
           </div>
         </div>

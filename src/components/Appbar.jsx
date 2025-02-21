@@ -20,7 +20,7 @@ function Appbar() {
   };
 
   return (
-    <nav className="fixed w-full z-50 bg-gray-900/80 backdrop-blur-sm border-b border-gray-700 font-Poppins relative">
+    <nav className="w-full z-50 bg-gray-900/80 backdrop-blur-sm border-b border-gray-700 font-Poppins relative">
       <div className="container mx-auto px-4">
         <div className="flex justify-between items-center h-16">
           {/* Logo avec animation au hover */}
@@ -59,7 +59,7 @@ function Appbar() {
                   
                   {/* Animation de soulignement dynamique */}
                   <motion.div
-                    className="absolute bottom-0 left-0 w-full h-0.5 bg-purple-400"
+                    className="absolute bottom-0 left-0 right-0 w-full h-0.5 bg-purple-400"
                     initial={{ scaleX: 0 }}
                     animate={{ scaleX: link.isActive ? 1 : 0 }}
                     transition={{ duration: 0.3 }}

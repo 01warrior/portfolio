@@ -139,7 +139,7 @@
     background-image: linear-gradient(0deg, transparent 24%, rgba(90, 90, 90, 0.1) 25%, rgba(90, 90, 90, 0.1) 26%, transparent 27%, transparent 74%, rgba(90, 90, 90, 0.1) 75%, rgba(90, 90, 90, 0.1) 76%, transparent 77%, transparent),
     linear-gradient(90deg, transparent 24%, rgba(90, 90, 90, 0.1) 25%, rgba(90, 90, 90, 0.1) 26%, transparent 27%, transparent 74%, rgba(90, 90, 90, 0.1) 75%, rgba(90, 90, 90, 0.1) 76%, transparent 77%, transparent);
     background-size: 100px 140px;
-    animation: grid-pan 150s linear infinite;
+    animation: grid-pan 100s linear infinite;
     /* Animation de déplacement de la grille */
   }
 

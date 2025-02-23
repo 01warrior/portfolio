@@ -48,12 +48,12 @@ function AnimatedText() {
   return (
     <div className="container mx-auto px-4 text-center relative z-10 font-Poppins">
       <h2 className="text-5xl md:text-7xl lg:text-8xl font-bold mb-4 bg-gradient-to-r from-blue-400 to-yellow-400 bg-clip-text text-transparent">
-        Hi ! je suis Soumaila SAVADOGO
+        Hi ! Je suis Soumaila SAVADOGO
       </h2>
       
       <div className="relative inline-block">
-        <p className="text-2xl text-wrap md:text-4xl lg:text-5xl text-gray-200 overflow-hidden whitespace-nowrap">
-          Ingénieur informatique | Passionné {" "}
+        <p className="text-2xl text-wrap md:text-4xl pb-3 lg:text-5xl text-gray-200 overflow-hidden whitespace-nowrap">
+          Ingénieur informatique{" "}
           <span className="text-yellow-400 border-r-2 border-purple-400 animate-blink">
             {currentText}
           </span>

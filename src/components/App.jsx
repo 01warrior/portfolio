@@ -69,7 +69,7 @@ function App() {
       <Appbar />
 
   <main>
-  <section id="presentation" className="pt-32 pb-20 lg:py-20 bg-slate-950 relative overflow-hidden min-h-screen">
+  <section id="presentation" className="pt-32 pb-20 lg:py-20 bg-black relative overflow-hidden min-h-screen">
   {/* Effet de lumière floutée */}
   <div className="absolute inset-0 pointer-events-none">
     <div className="absolute -left-20 -top-40 w-[800px] h-[800px] bg-purple-500/20 blur-[100px] rounded-full animate-pulse-slow" />
@@ -83,7 +83,7 @@ function App() {
     <AnimatedText />
 
     {/* Effet de halo autour du MacScreenMockup */}
-    <div className="relative mt-12 lg:mt-20">
+    <div className="relative mt-12 lg:mt-10">
       <div className="absolute -inset-8 bg-gradient-to-r from-purple-500/30 to-blue-500/30 rounded-xl blur-3xl -z-10 animate-glow" />
       <MacScreenMockup>
         <div className="text-sm md:text-lg font-mono p-4 md:p-6">

@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 
 function AnimatedText() {
 
-  const words = ["React", "Flutter", "Dart", "Docker", "Node.js","SpringBoot","Java","Tailwind"];
+  const words = ["Curieux","Autonome", "Rigoureux", "Adaptable", "Persévérant", "Passionné","Créatif"];
 
   const [currentWordIndex, setCurrentWordIndex] = useState(0);
   const [currentText, setCurrentText] = useState("");
@@ -53,7 +53,7 @@ function AnimatedText() {
       
       <div className="relative inline-block">
         <p className="text-2xl text-wrap md:text-4xl pb-3 lg:text-5xl text-gray-200 overflow-hidden whitespace-nowrap">
-          Ingénieur informatique{" "}
+          Ingénieur informatique | {" "}
           <span className="text-yellow-400 border-r-2 border-purple-400 animate-blink">
             {currentText}
           </span>

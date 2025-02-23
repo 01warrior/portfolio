@@ -315,8 +315,8 @@ function App() {
               </div>
               <div>
                 <p className="text-gray-400">Téléphone</p>
-                <a href="tel:+123456789" className="text-lg text-gray-200 hover:text-yellow-400 transition-colors">
-                  +33 6 12 34 56 78
+                <a href="tel:+212 665-122930" className="text-lg text-gray-200 hover:text-yellow-400 transition-colors">
+                  +212 665-122930
                 </a>
               </div>
             </div>
@@ -327,16 +327,16 @@ function App() {
         {/* Réseaux sociaux avec animations */}
         <div className="flex-1 flex flex-col justify-center space-y-6">
           {[
-            { name: 'GitHub', icon: '💻', color: 'from-blue-900 to-pink-500' },
-            { name: 'LinkedIn', icon: '🔗', color: 'from-blue-950 to-cyan-400' },
-            { name: 'Twitter', icon: '🐦', color: 'from-sky-900 to-blue-600' }
+            { name: 'GitHub', icon: '💻', color: 'from-blue-900 to-pink-500' ,lien:'https://github.com/01warrior'},
+            { name: 'LinkedIn', icon: '🔗', color: 'from-blue-950 to-cyan-400',lien:'https://www.linkedin.com/in/savadogo-souma%C3%AFla-6694b9243/' },
+            { name: 'Facebook', icon: '🐦', color: 'from-sky-900 to-blue-600' ,lien:'https://github.com/01warrior'}
           ].map((social, index) => (
             <motion.a
               key={index}
               whileHover={{ x: 10, scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
               className={`p-4 rounded-xl bg-gradient-to-r ${social.color} flex items-center gap-4 shadow-lg hover:shadow-xl transition-all`}
-              href="#"
+              href={social.lien}
             >
               <span className="text-2xl">{social.icon}</span>
               <span className="text-lg font-bold text-white">{social.name}</span>

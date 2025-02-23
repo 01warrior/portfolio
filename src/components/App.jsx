@@ -165,7 +165,67 @@ function App() {
         {/* Conteneur d'image avec overflow hidden */}
           <div className="h-48 w-full mb-4 rounded-lg overflow-hidden relative">
           <img 
-            src="https://github.com/01warrior/portfolio/blob/main/assets/image.png?raw=true" // Chemin relatif depuis le dossier public
+            src="https://soumaila-savadogo.omnia-elearning.com/wp-content/uploads/2024/03/Minimal-Gradient-Modern-Animated-Marketing-Instagram-Reel-1080-x-900-px_20240401_222350_0000.png" // Chemin relatif depuis le dossier public
+            alt="Projet React" 
+            className="w-full h-full object-cover object-center transition-transform duration-300 hover:scale-105"
+            loading="lazy"
+          />
+          
+          {/* Overlay au survol */}
+          <div className="absolute inset-0 bg-black/50 opacity-0 hover:opacity-100 transition-opacity flex items-center justify-center">
+            <span className="text-white font-bold text-lg">Voir le projet →</span>
+          </div>
+          </div>
+
+          <h3 className="text-xl font-semibold mb-2">Docteur</h3>
+          <p className="text-gray-400">Application mobile avec Flutter une IA medecin</p>
+      </div>
+
+      <div className="bg-gray-700/50 rounded-lg p-6 transition-all duration-300 hover:bg-gray-700/70 relative glow-effect">
+        {/* Conteneur d'image avec overflow hidden */}
+          <div className="h-48 w-full mb-4 rounded-lg overflow-hidden relative">
+          <img 
+            src="https://soumaila-savadogo.omnia-elearning.com/wp-content/uploads/2024/03/Capture-decran-2024-03-21-115129.png" // Chemin relatif depuis le dossier public
+            alt="Projet React" 
+            className="w-full h-full object-cover object-center transition-transform duration-300 hover:scale-105"
+            loading="lazy"
+          />
+          
+          {/* Overlay au survol */}
+          <div className="absolute inset-0 bg-black/50 opacity-0 hover:opacity-100 transition-opacity flex items-center justify-center">
+            <span className="text-white font-bold text-lg">Voir le projet →</span>
+          </div>
+          </div>
+
+          <h3 className="text-xl font-semibold mb-2">Site de media</h3>
+          <p className="text-gray-400">Site de de media Reflet info</p>
+      </div>
+
+      <div className="bg-gray-700/50 rounded-lg p-6 transition-all duration-300 hover:bg-gray-700/70 relative glow-effect">
+        {/* Conteneur d'image avec overflow hidden */}
+          <div className="h-48 w-full mb-4 rounded-lg overflow-hidden relative">
+          <img 
+            src="https://soumaila-savadogo.omnia-elearning.com/wp-content/uploads/2024/03/Capture-decran-2023-04-10-133548.png" // Chemin relatif depuis le dossier public
+            alt="Projet React" 
+            className="w-full h-full object-cover object-center transition-transform duration-300 hover:scale-105"
+            loading="lazy"
+          />
+          
+          {/* Overlay au survol */}
+          <div className="absolute inset-0 bg-black/50 opacity-0 hover:opacity-100 transition-opacity flex items-center justify-center">
+            <span className="text-white font-bold text-lg"><a href="https://stargate-groups.com/">Voir le projet →</a></span>
+          </div>
+          </div>
+
+          <h3 className="text-xl font-semibold mb-2">Projet React</h3>
+          <p className="text-gray-400">Application web moderne avec React et TypeScript</p>
+      </div>
+
+      <div className="bg-gray-700/50 rounded-lg p-6 transition-all duration-300 hover:bg-gray-700/70 relative glow-effect">
+        {/* Conteneur d'image avec overflow hidden */}
+          <div className="h-48 w-full mb-4 rounded-lg overflow-hidden relative">
+          <img 
+            src="https://soumaila-savadogo.omnia-elearning.com/wp-content/uploads/2024/03/20240306_114208_0000.png" // Chemin relatif depuis le dossier public
             alt="Projet React" 
             className="w-full h-full object-cover object-center transition-transform duration-300 hover:scale-105"
             loading="lazy"
@@ -185,7 +245,7 @@ function App() {
         {/* Conteneur d'image avec overflow hidden */}
           <div className="h-48 w-full mb-4 rounded-lg overflow-hidden relative">
           <img 
-            src="../../assets/image.png" // Chemin relatif depuis le dossier public
+            src="https://soumaila-savadogo.omnia-elearning.com/wp-content/uploads/2024/03/20240306_115751_0000.png" // Chemin relatif depuis le dossier public
             alt="Projet React" 
             className="w-full h-full object-cover object-center transition-transform duration-300 hover:scale-105"
             loading="lazy"
@@ -205,67 +265,7 @@ function App() {
         {/* Conteneur d'image avec overflow hidden */}
           <div className="h-48 w-full mb-4 rounded-lg overflow-hidden relative">
           <img 
-            src="../../assets/image.png" // Chemin relatif depuis le dossier public
-            alt="Projet React" 
-            className="w-full h-full object-cover object-center transition-transform duration-300 hover:scale-105"
-            loading="lazy"
-          />
-          
-          {/* Overlay au survol */}
-          <div className="absolute inset-0 bg-black/50 opacity-0 hover:opacity-100 transition-opacity flex items-center justify-center">
-            <span className="text-white font-bold text-lg">Voir le projet →</span>
-          </div>
-          </div>
-
-          <h3 className="text-xl font-semibold mb-2">Projet React</h3>
-          <p className="text-gray-400">Application web moderne avec React et TypeScript</p>
-      </div>
-
-      <div className="bg-gray-700/50 rounded-lg p-6 transition-all duration-300 hover:bg-gray-700/70 relative glow-effect">
-        {/* Conteneur d'image avec overflow hidden */}
-          <div className="h-48 w-full mb-4 rounded-lg overflow-hidden relative">
-          <img 
-            src="../../assets/image.png" // Chemin relatif depuis le dossier public
-            alt="Projet React" 
-            className="w-full h-full object-cover object-center transition-transform duration-300 hover:scale-105"
-            loading="lazy"
-          />
-          
-          {/* Overlay au survol */}
-          <div className="absolute inset-0 bg-black/50 opacity-0 hover:opacity-100 transition-opacity flex items-center justify-center">
-            <span className="text-white font-bold text-lg">Voir le projet →</span>
-          </div>
-          </div>
-
-          <h3 className="text-xl font-semibold mb-2">Projet React</h3>
-          <p className="text-gray-400">Application web moderne avec React et TypeScript</p>
-      </div>
-
-      <div className="bg-gray-700/50 rounded-lg p-6 transition-all duration-300 hover:bg-gray-700/70 relative glow-effect">
-        {/* Conteneur d'image avec overflow hidden */}
-          <div className="h-48 w-full mb-4 rounded-lg overflow-hidden relative">
-          <img 
-            src="../../assets/image.png" // Chemin relatif depuis le dossier public
-            alt="Projet React" 
-            className="w-full h-full object-cover object-center transition-transform duration-300 hover:scale-105"
-            loading="lazy"
-          />
-          
-          {/* Overlay au survol */}
-          <div className="absolute inset-0 bg-black/50 opacity-0 hover:opacity-100 transition-opacity flex items-center justify-center">
-            <span className="text-white font-bold text-lg">Voir le projet →</span>
-          </div>
-          </div>
-
-          <h3 className="text-xl font-semibold mb-2">Projet React</h3>
-          <p className="text-gray-400">Application web moderne avec React et TypeScript</p>
-      </div>
-
-      <div className="bg-gray-700/50 rounded-lg p-6 transition-all duration-300 hover:bg-gray-700/70 relative glow-effect">
-        {/* Conteneur d'image avec overflow hidden */}
-          <div className="h-48 w-full mb-4 rounded-lg overflow-hidden relative">
-          <img 
-            src="../../assets/image.png" // Chemin relatif depuis le dossier public
+            src="https://soumaila-savadogo.omnia-elearning.com/wp-content/uploads/2024/03/20240306_120050_0000.png" // Chemin relatif depuis le dossier public
             alt="Projet React" 
             className="w-full h-full object-cover object-center transition-transform duration-300 hover:scale-105"
             loading="lazy"

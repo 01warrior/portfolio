@@ -303,8 +303,8 @@ function App() {
               </div>
               <div>
                 <p className="text-gray-400">Email</p>
-                <a href="mailto:contact@example.com" className="text-lg text-gray-200 hover:text-yellow-400 transition-colors">
-                  contact@soumaila.dev
+                <a href="mailto:soumailasavadogo201@gmail.com" className="text-lg text-gray-200 hover:text-yellow-400 transition-colors">
+                  soumailasavadogo201@gmail.com
                 </a>
               </div>
             </div>

@@ -89,8 +89,8 @@ function App() {
         <div className="text-sm md:text-lg font-mono p-4 md:p-6">
           <div className="text-sm md:text-lg font-mono p-4 md:p-6">
                  <p><span className="text-code-keyword">const</span> <span className="text-code-variable">moi</span> <span className="text-code-operator">=</span> <span className="text-code-string">"Soumaila SAVADOGO"</span><span className="text-code-punctuation">;</span></p>
-                <p><span className="text-code-keyword">const</span> <span className="text-code-variable">superPouvoir</span> <span className="text-code-operator">=</span> <span className="text-code-string">"Full-Stack Wizard 🧙♂️💻"</span><span className="text-code-punctuation">;</span></p>
-                <p><span className="text-code-keyword">const</span> <span className="text-code-variable">vibeCheck</span> <span className="text-code-operator">=</span> <span className="text-code-string">"95% de chance que vous kiffiez le résultat 🚀🔥"</span><span className="text-code-punctuation">;</span></p>
+                <p><span className="text-code-keyword">const</span> <span className="text-code-variable">superPouvoir</span> <span className="text-code-operator">=</span> <span className="text-code-string">"Full-Stack Wizard"</span><span className="text-code-punctuation">;</span></p>
+                <p><span className="text-code-keyword">const</span> <span className="text-code-variable">vibeCheck</span> <span className="text-code-operator">=</span> <span className="text-code-string">"95% de chance que vous kiffiez le résultat"</span><span className="text-code-punctuation">;</span></p>
                 <p><span className="text-code-keyword">let</span> <span className="text-code-variable">créativité</span> <span className="text-code-operator">=</span> <span className="text-code-number">Infinity</span><span className="text-code-punctuation">;</span></p>
                 <p><span className="text-code-keyword">const</span> <span className="text-code-variable">café</span> <span className="text-code-operator">=</span> <span className="text-code-string">"Code Fuel ☕️⚡️"</span><span className="text-code-punctuation">;</span></p>
                 <p><span className="text-code-comment">// PS: Mon code est plus propre que mon bureau 😅</span></p>
@@ -116,22 +116,19 @@ function App() {
 
     <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8">
       {[
-        { name: 'Docker', icon: 'https://github.com/01warrior/portfolio/blob/main/assets/docker.png?raw=true', color: 'from-blue-500 to-cyan-400' },
-        { name: 'Flutter',icon: 'https://github.com/01warrior/portfolio/blob/main/assets/flutter.png?raw=true', color: 'from-green-500 to-emerald-400' },
-        { name: 'SpringBoot',icon: 'https://github.com/01warrior/portfolio/blob/main/assets/spring.png?raw=true', color: 'from-yellow-400 to-orange-400' },
-        { name: 'React.js', icon: 'https://github.com/01warrior/portfolio/blob/main/assets/react.png?raw=true', color: 'from-sky-400 to-blue-600' },
-        { name: 'TailWind', icon: 'https://github.com/01warrior/portfolio/blob/main/assets/tailwindcss.png?raw=true', color: 'from-blue-400 to-purple-500' },
-        { name: 'Python', icon: 'https://github.com/01warrior/portfolio/blob/main/assets/python.png?raw=true', color: 'from-purple-500 to-pink-400' },
-        { name: 'Wordpress',icon: 'https://github.com/01warrior/portfolio/blob/main/assets/wop.png?raw=true', color: 'from-blue-400 to-sky-600' },
-        { name: 'Supabase', icon: 'https://github.com/01warrior/portfolio/blob/main/assets/supabase.png?raw=true', color: 'from-green-500 to-emerald-400' },
-        { name: 'Canva', icon: 'https://github.com/01warrior/portfolio/blob/main/assets/canva.png?raw=true', color: 'from-green-500 to-emerald-400' },
-        { name: 'Figma', icon: 'https://github.com/01warrior/portfolio/blob/main/assets/figma.png?raw=true', color: 'from-green-500 to-emerald-400' },
-        { name: 'MySQL', icon: 'https://github.com/01warrior/portfolio/blob/main/assets/mysql.png?raw=true', color: 'from-green-500 to-emerald-400' },
-        { name: 'Node.Js', icon: 'https://raw.githubusercontent.com/01warrior/portfolio/18aff3fa26c9d423d48d58c8de82a4fe00d8829f/assets/nodejs.svg', color: 'from-green-500 to-emerald-400' },
-        
-
-        
-      ].map((skill, index) => (
+                { name: 'Docker', icon: 'https://github.com/01warrior/portfolio/blob/main/assets/docker.png?raw=true', color: 'from-blue-500 to-cyan-400', mastery: 85 },
+                { name: 'Flutter', icon: 'https://github.com/01warrior/portfolio/blob/main/assets/flutter.png?raw=true', color: 'from-green-500 to-emerald-400', mastery: 95 },
+                { name: 'SpringBoot', icon: 'https://github.com/01warrior/portfolio/blob/main/assets/spring.png?raw=true', color: 'from-yellow-400 to-orange-400', mastery: 75 },
+                { name: 'React.js', icon: 'https://github.com/01warrior/portfolio/blob/main/assets/react.png?raw=true', color: 'from-sky-400 to-blue-600', mastery: 90 },
+                { name: 'TailWind', icon: 'https://github.com/01warrior/portfolio/blob/main/assets/tailwindcss.png?raw=true', color: 'from-blue-400 to-purple-500', mastery: 95 },
+                { name: 'Python', icon: 'https://github.com/01warrior/portfolio/blob/main/assets/python.png?raw=true', color: 'from-purple-500 to-pink-400', mastery: 70 },
+                { name: 'Wordpress', icon: 'https://github.com/01warrior/portfolio/blob/main/assets/wop.png?raw=true', color: 'from-blue-400 to-sky-600', mastery: 97 },
+                { name: 'Supabase', icon: 'https://github.com/01warrior/portfolio/blob/main/assets/supabase.png?raw=true', color: 'from-green-500 to-emerald-400', mastery: 85 },
+                { name: 'Canva', icon: 'https://github.com/01warrior/portfolio/blob/main/assets/canva.png?raw=true', color: 'from-green-500 to-emerald-400', mastery: 60 },
+                { name: 'Figma', icon: 'https://github.com/01warrior/portfolio/blob/main/assets/figma.png?raw=true', color: 'from-green-500 to-emerald-400', mastery: 75 },
+                { name: 'MySQL', icon: 'https://github.com/01warrior/portfolio/blob/main/assets/mysql.png?raw=true', color: 'from-green-500 to-emerald-400', mastery: 80 },
+                { name: 'Node.Js', icon: 'https://raw.githubusercontent.com/01warrior/portfolio/18aff3fa26c9d423d48d58c8de82a4fe00d8829f/assets/nodejs.svg', color: 'from-green-500 to-emerald-400', mastery: 85 },
+              ].map((skill, index) => (
         <motion.div 
           key={index}
           whileHover={{ scale: 1.05, rotate: [0, -2, 2, 0] }}
@@ -144,7 +141,7 @@ function App() {
           <div className="mt-2 w-full bg-gray-800 rounded-full h-2">
             <div 
               className={`bg-gradient-to-r ${skill.color} h-2 rounded-full transition-all duration-1000`}
-              style={{ width: `${Math.random() * 40 + 60}%` }}
+              style={{ width: `${skill.mastery}%` }}
             />
           </div>
         </motion.div>

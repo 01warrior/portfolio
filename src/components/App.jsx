@@ -87,18 +87,13 @@ function App() {
       <div className="absolute -inset-8 bg-gradient-to-r from-purple-500/30 to-blue-500/30 rounded-xl blur-3xl -z-10 animate-glow" />
       <MacScreenMockup>
         <div className="text-sm md:text-lg font-mono p-4 md:p-6">
-          <div className="text-sm md:text-lg font-mono p-4 md:p-6">
+       
                  <p><span className="text-code-keyword">const</span> <span className="text-code-variable">moi</span> <span className="text-code-operator">=</span> <span className="text-code-string">"Soumaila SAVADOGO"</span><span className="text-code-punctuation">;</span></p>
-                <p><span className="text-code-keyword">const</span> <span className="text-code-variable">superPouvoir</span> <span className="text-code-operator">=</span> <span className="text-code-string">"Full-Stack Wizard"</span><span className="text-code-punctuation">;</span></p>
                 <p><span className="text-code-keyword">const</span> <span className="text-code-variable">vibeCheck</span> <span className="text-code-operator">=</span> <span className="text-code-string">"95% de chance que vous kiffiez le résultat"</span><span className="text-code-punctuation">;</span></p>
                 <p><span className="text-code-keyword">let</span> <span className="text-code-variable">créativité</span> <span className="text-code-operator">=</span> <span className="text-code-number">Infinity</span><span className="text-code-punctuation">;</span></p>
                 <p><span className="text-code-keyword">const</span> <span className="text-code-variable">café</span> <span className="text-code-operator">=</span> <span className="text-code-string">"Code Fuel ☕️⚡️"</span><span className="text-code-punctuation">;</span></p>
                 <p><span className="text-code-comment">// PS: Mon code est plus propre que mon bureau 😅</span></p>
-                <div className="text-code-comment animate-pulse mt-4">
-                  $ npm run start-awesome-project
-                </div>
-                  <p><span className="text-code-comment animate-pulse">// Bienvenue sur mon portfolio 😉!</span></p>
-          </div>
+    
         </div>
       </MacScreenMockup>
     </div>
@@ -291,7 +286,7 @@ function App() {
       On parle de votre projet
     </h2>
 
-    <div className="max-w-2xl mx-auto bg-gray-900/50 backdrop-blur-xl rounded-3xl p-8 border border-white/10 transform perspective-1000">
+    <div className="max-w-5xl mx-auto bg-gray-900/50 backdrop-blur-xl rounded-3xl p-8 border border-white/10 transform perspective-1000">
       <div className="flex flex-col md:flex-row gap-8">
         {/* Hologramme interactif */}
         <div className="flex-1 relative">
@@ -304,7 +299,8 @@ function App() {
               <div>
                 <p className="text-gray-400">Email</p>
                 <a href="mailto:soumailasavadogo201@gmail.com" className="text-lg text-gray-200 hover:text-yellow-400 transition-colors">
-                  soumailasavadogo201@gmail.com
+                  soumailasavadogo201
+                  @gmail.com
                 </a>
               </div>
             </div>

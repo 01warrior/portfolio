@@ -100,6 +100,71 @@ function App() {
   </div>
 </section>
 
+<section id="competences" className="py-16 lg:py-20  bg-slate-950 relative overflow-hidden">
+  <div className="absolute inset-0 bg-fractal-pattern opacity-10 animate-pan"></div>
+  
+  <div className="container mx-auto px-4 relative z-10">
+    <h2 className="text-4xl lg:text-6xl font-bold mb-16 text-center bg-gradient-to-r from-blue-400 to-yellow-400 bg-clip-text text-transparent">
+      BioGraphie 
+    </h2>
+
+    <MacScreenMockup>
+  <div className="text-sm md:text-lg font-mono p-4 md:p-6 space-y-4">
+    <p className="text-code-text">
+      Enfant, j'étais déjà celui qui réparait ce qui semblait irréparable : 
+      des radios qui ne marchaient plus, des lampes éteintes, des ordinateurs en panne. 
+      Le numérique, c'était comme une langue que je comprenais naturellement, 
+      sans avoir besoin de mode d'emploi.
+    </p>
+
+    <p className="text-code-text">
+      Après un parcours scolaire sans vagues jusqu'au bac, j'ai choisi de donner 
+      un sens à ma curiosité insatiable : l'informatique s'est révélée bien plus 
+      qu'une discipline - un langage universel pour modeler demain. Pas question 
+      de me contenter de suivre des cours : je voulais inventer, bousculer, accélérer. 
+      Trois ans plus tard, je décrochais ma licence en session anticipée. 
+      Parce que la passion, ça ne se met pas en attente.
+    </p>
+
+    <p className="text-code-text">
+      Aujourd'hui, je porte encore en moi cette fascination d'enfant pour 
+      les mystères technologiques, transformée en une expertise aiguisée. 
+      Chaque algorithme est une énigme à cracker, chaque innovation, 
+      une étincelle à nourrir. Mon histoire ? Celle d'un éternel curieux 
+      qui a compris que l'avenir ne s'attend pas, il se code à la volée.
+    </p>
+
+    <p className="text-code-comment mt-6">
+      🚀 « Le digital n'est pas un outil, c'est une seconde peau. 
+      Et moi, je vis déjà dans demain. » 💻
+    </p>
+  </div>
+</MacScreenMockup>
+  </div>
+
+  {/* Effet de peinture derrière */}
+  <div className="absolute -top-4 left-1/2 -translate-x-1/2 w-[120%] h-[140%] opacity-30">
+    <svg viewBox="0 0 500 200" className="w-full h-full">
+      <path 
+        d="M12.3 184C38 178 120.7 137.7 185 118c78.7-24.1 155.7-17.3 215-9 86.8 12.1 172 37.7 172 37.7" 
+        stroke="url(#paint-gradient)" 
+        stroke-width="30" 
+        stroke-linecap="round"
+        fill="none"
+        pathLength="1"
+        className="animate-brushStroke"
+      />
+      <defs>
+        <linearGradient id="paint-gradient" x1="0%" y1="0%" x2="100%" y2="0%">
+          <stop offset="0%" stop-color="#60a5fa" />
+          <stop offset="100%" stop-color="#fbbf24" />
+        </linearGradient>
+      </defs>
+    </svg>
+  </div>
+
+</section>
+
 
 <section id="competences" className="py-16 lg:py-20  bg-slate-950 relative overflow-hidden">
   <div className="absolute inset-0 bg-fractal-pattern opacity-10 animate-pan"></div>
@@ -285,6 +350,7 @@ function App() {
     <h2 className="text-4xl lg:text-6xl font-bold mb-16 text-center bg-gradient-to-r from-yellow-400 to-blue-400 bg-clip-text text-transparent">
       On parle de votre projet
     </h2>
+    
 
     <div className="max-w-5xl mx-auto bg-gray-900/50 backdrop-blur-xl rounded-3xl p-8 border border-white/10 transform perspective-1000">
       <div className="flex flex-col md:flex-row gap-8">

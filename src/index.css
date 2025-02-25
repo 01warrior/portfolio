@@ -5,6 +5,26 @@
 
 @layer utilities {
 
+  /* debu animation peinture */
+  @keyframes brushStroke {
+      0% {
+        stroke-dashoffset: 1;
+        opacity: 0.2;
+      }
+  
+      100% {
+        stroke-dashoffset: 0;
+        opacity: 0.4;
+      }
+    }
+  
+    .animate-brushStroke {
+      stroke-dasharray: 1;
+      animation: brushStroke 2s ease-out forwards;
+    }
+
+    /* fin animation peinture */
+
   html,
     body {
       overflow-x: hidden;
@@ -90,7 +110,7 @@
       }
   
       50% {
-        border-color: #8b5cf6
+        border-color: #ccc315
       }
     }
   

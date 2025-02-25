@@ -304,7 +304,7 @@ function App() {
           
           {/* Overlay au survol */}
           <div className="absolute inset-0 bg-black/50 opacity-0 hover:opacity-100 transition-opacity flex items-center justify-center">
-            <span className="text-white font-bold text-lg">Voir le projet →</span>
+            <span className="text-white font-bold text-lg"><a href="https://www.linkedin.com/posts/savadogo-souma%C3%AFla-6694b9243_flutter-ia-intelligenceartificielle-activity-7168223963515494400-QBZz?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADxom3EBkG-pvdKGHK0xa24uEv1gqz7YBqs">Voir le projet →</a></span>
           </div>
           </div>
 
@@ -365,13 +365,34 @@ function App() {
           
           {/* Overlay au survol */}
           <div className="absolute inset-0 bg-black/50 opacity-0 hover:opacity-100 transition-opacity flex items-center justify-center">
-            <span className="text-white font-bold text-lg">Voir le projet →</span>
+            <span className="text-white font-bold text-lg"><a href="https://www.linkedin.com/posts/savadogo-souma%C3%AFla-6694b9243_flutter-mobiledev-ai-activity-7286810396080939008-x-9Q?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADxom3EBkG-pvdKGHK0xa24uEv1gqz7YBqs">Voir le projet →</a></span>
           </div>
           </div>
 
           <h3 className="text-xl font-semibold mb-2">Fun</h3>
           <p className="text-gray-400">Application de chat permettant de discuter avc nimporte qui alimenté par ia</p>
       </div>
+
+      <div className="bg-gray-700/50 rounded-lg p-6 transition-all duration-300 hover:bg-gray-700/70 relative glow-effect">
+        {/* Conteneur d'image avec overflow hidden */}
+          <div className="h-50 w-full mb-4 rounded-lg overflow-hidden relative">
+          <img 
+            src="https://github.com/01warrior/portfolio/blob/main/assets/fun.png?raw=true" // Chemin relatif depuis le dossier public
+            alt="Projet React" 
+            className="w-full h-full object-cover object-center transition-transform duration-300 hover:scale-105"
+            loading="lazy"
+          />
+          
+          {/* Overlay au survol */}
+          <div className="absolute inset-0 bg-black/50 opacity-0 hover:opacity-100 transition-opacity flex items-center justify-center">
+            <span className="text-white font-bold text-lg"><a href="https://www.linkedin.com/posts/savadogo-souma%C3%AFla-6694b9243_flutter-mobiledev-ai-activity-7286810396080939008-x-9Q?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADxom3EBkG-pvdKGHK0xa24uEv1gqz7YBqs">Voir le projet →</a></span>
+          </div>
+          </div>
+
+          <h3 className="text-xl font-semibold mb-2">Application WatchLux</h3>
+          <p className="text-gray-400">Application de vente de montre de luxe flutter dart</p>
+      </div>
+
 
       
     </div>

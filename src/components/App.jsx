@@ -377,7 +377,7 @@ function App() {
         {/* Conteneur d'image avec overflow hidden */}
           <div className="h-50 w-full mb-4 rounded-lg overflow-hidden relative">
           <img 
-            src="https://github.com/01warrior/portfolio/blob/main/assets/fun.png?raw=true" // Chemin relatif depuis le dossier public
+            src="https://github.com/01warrior/portfolio/blob/main/assets/luxe.png?raw=true" // Chemin relatif depuis le dossier public
             alt="Projet React" 
             className="w-full h-full object-cover object-center transition-transform duration-300 hover:scale-105"
             loading="lazy"
@@ -393,6 +393,25 @@ function App() {
           <p className="text-gray-400">Application de vente de montre de luxe flutter dart</p>
       </div>
 
+<div className="bg-gray-700/50 rounded-lg p-6 transition-all duration-300 hover:bg-gray-700/70 relative glow-effect">
+        {/* Conteneur d'image avec overflow hidden */}
+          <div className="h-50 w-full mb-4 rounded-lg overflow-hidden relative">
+          <img 
+            src="https://github.com/01warrior/portfolio/blob/main/assets/network.png?raw=true" // Chemin relatif depuis le dossier public
+            alt="Projet React" 
+            className="w-full h-full object-cover object-center transition-transform duration-300 hover:scale-105"
+            loading="lazy"
+          />
+          
+          {/* Overlay au survol */}
+          <div className="absolute inset-0 bg-black/50 opacity-0 hover:opacity-100 transition-opacity flex items-center justify-center">
+            <span className="text-white font-bold text-lg"><a href="#">Voir le projet →</a></span>
+          </div>
+          </div>
+
+          <h3 className="text-xl font-semibold mb-2">Application Network</h3>
+          <p className="text-gray-400">Application d'apprentissage de concept en réseau informatique</p>
+      </div>
 
       
     </div>

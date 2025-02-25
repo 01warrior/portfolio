@@ -212,9 +212,9 @@ function App() {
 
       <div className="bg-gray-700/50 rounded-lg p-6 transition-all duration-300 hover:bg-gray-700/70 relative glow-effect">
         {/* Conteneur d'image avec overflow hidden */}
-          <div className="h50 w-full mb-4 rounded-lg overflow-hidden relative">
+          <div className="h-48 w-full mb-4 rounded-lg overflow-hidden relative">
           <img 
-            src="https://soumaila-savadogo.omnia-elearning.com/wp-content/uploads/2024/03/Minimal-Gradient-Modern-Animated-Marketing-Instagram-Reel-1080-x-900-px_20240401_222350_0000.png" // Chemin relatif depuis le dossier public
+            src="https://github.com/01warrior/portfolio/blob/main/assets/tondlaafi.png?raw=true" // Chemin relatif depuis le dossier public
             alt="Projet React" 
             className="w-full h-full object-cover object-center transition-transform duration-300 hover:scale-105"
             loading="lazy"
@@ -226,29 +226,11 @@ function App() {
           </div>
           </div>
 
-          <h3 className="text-xl font-semibold mb-2">TondLaafi</h3>
+          <h3 className="text-xl font-semibold mb-2">Application TondLaafi</h3>
           <p className="text-gray-400">Application mobile de e-santé au burkina Faso pour L'ABBEF</p>
       </div>
 
-      <div className="bg-gray-700/50 rounded-lg p-6 transition-all duration-300 hover:bg-gray-700/70 relative glow-effect">
-        {/* Conteneur d'image avec overflow hidden */}
-          <div className="h-50 w-full mb-4 rounded-lg overflow-hidden relative">
-          <img 
-            src="https://soumaila-savadogo.omnia-elearning.com/wp-content/uploads/2024/03/Minimal-Gradient-Modern-Animated-Marketing-Instagram-Reel-1080-x-900-px_20240401_222350_0000.png" // Chemin relatif depuis le dossier public
-            alt="Projet React" 
-            className="w-full h-full object-cover object-center transition-transform duration-300 hover:scale-105"
-            loading="lazy"
-          />
-          
-          {/* Overlay au survol */}
-          <div className="absolute inset-0 bg-black/50 opacity-0 hover:opacity-100 transition-opacity flex items-center justify-center">
-            <span className="text-white font-bold text-lg">Voir le projet →</span>
-          </div>
-          </div>
-
-          <h3 className="text-xl font-semibold mb-2">Docteur</h3>
-          <p className="text-gray-400">Application mobile avec Flutter une IA medecin avec Flutter,Dart Supabase</p>
-      </div>
+  
 
       <div className="bg-gray-700/50 rounded-lg p-6 transition-all duration-300 hover:bg-gray-700/70 relative glow-effect">
         {/* Conteneur d'image avec overflow hidden */}
@@ -292,7 +274,7 @@ function App() {
 
       <div className="bg-gray-700/50 rounded-lg p-6 transition-all duration-300 hover:bg-gray-700/70 relative glow-effect">
         {/* Conteneur d'image avec overflow hidden */}
-          <div className="h-48 w-full mb-4 rounded-lg overflow-hidden relative">
+          <div className="h-50 w-full mb-4 rounded-lg overflow-hidden relative">
           <img 
             src="https://soumaila-savadogo.omnia-elearning.com/wp-content/uploads/2024/03/20240306_114208_0000.png" // Chemin relatif depuis le dossier public
             alt="Projet React" 
@@ -312,7 +294,27 @@ function App() {
 
       <div className="bg-gray-700/50 rounded-lg p-6 transition-all duration-300 hover:bg-gray-700/70 relative glow-effect">
         {/* Conteneur d'image avec overflow hidden */}
-          <div className="h-48 w-full mb-4 rounded-lg overflow-hidden relative">
+          <div className="h-50 w-full mb-4 rounded-lg overflow-hidden relative">
+          <img 
+            src="https://soumaila-savadogo.omnia-elearning.com/wp-content/uploads/2024/03/Minimal-Gradient-Modern-Animated-Marketing-Instagram-Reel-1080-x-900-px_20240401_222350_0000.png" // Chemin relatif depuis le dossier public
+            alt="Projet React" 
+            className="w-full h-full object-cover object-center transition-transform duration-300 hover:scale-105"
+            loading="lazy"
+          />
+          
+          {/* Overlay au survol */}
+          <div className="absolute inset-0 bg-black/50 opacity-0 hover:opacity-100 transition-opacity flex items-center justify-center">
+            <span className="text-white font-bold text-lg">Voir le projet →</span>
+          </div>
+          </div>
+
+          <h3 className="text-xl font-semibold mb-2">Docteur</h3>
+          <p className="text-gray-400">Application mobile avec Flutter une IA medecin avec Flutter,Dart Supabase</p>
+      </div>
+
+      <div className="bg-gray-700/50 rounded-lg p-6 transition-all duration-300 hover:bg-gray-700/70 relative glow-effect">
+        {/* Conteneur d'image avec overflow hidden */}
+          <div className="h-50 w-full mb-4 rounded-lg overflow-hidden relative">
           <img 
             src="https://soumaila-savadogo.omnia-elearning.com/wp-content/uploads/2024/03/20240306_115751_0000.png" // Chemin relatif depuis le dossier public
             alt="Projet React" 
@@ -332,7 +334,7 @@ function App() {
 
       <div className="bg-gray-700/50 rounded-lg p-6 transition-all duration-300 hover:bg-gray-700/70 relative glow-effect">
         {/* Conteneur d'image avec overflow hidden */}
-          <div className="h-48 w-full mb-4 rounded-lg overflow-hidden relative">
+          <div className="h-50 w-full mb-4 rounded-lg overflow-hidden relative">
           <img 
             src="https://soumaila-savadogo.omnia-elearning.com/wp-content/uploads/2024/03/20240306_120050_0000.png" // Chemin relatif depuis le dossier public
             alt="Projet React" 

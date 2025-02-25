@@ -352,6 +352,27 @@ function App() {
           <p className="text-gray-400">Jeu interactif amusant Action ou verité avec flutter</p>
       </div>
 
+
+      <div className="bg-gray-700/50 rounded-lg p-6 transition-all duration-300 hover:bg-gray-700/70 relative glow-effect">
+        {/* Conteneur d'image avec overflow hidden */}
+          <div className="h-50 w-full mb-4 rounded-lg overflow-hidden relative">
+          <img 
+            src="https://soumaila-savadogo.omnia-elearning.com/wp-content/uploads/2024/03/20240306_120050_0000.png" // Chemin relatif depuis le dossier public
+            alt="Projet React" 
+            className="w-full h-full object-cover object-center transition-transform duration-300 hover:scale-105"
+            loading="lazy"
+          />
+          
+          {/* Overlay au survol */}
+          <div className="absolute inset-0 bg-black/50 opacity-0 hover:opacity-100 transition-opacity flex items-center justify-center">
+            <span className="text-white font-bold text-lg">Voir le projet →</span>
+          </div>
+          </div>
+
+          <h3 className="text-xl font-semibold mb-2">Fun</h3>
+          <p className="text-gray-400">Application de chat permettant de discuter avc nimporte qui alimenté par ia</p>
+      </div>
+
       
     </div>
   </div>

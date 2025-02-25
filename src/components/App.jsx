@@ -169,17 +169,17 @@ function App() {
     <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8">
       {[
                 { name: 'Docker', icon: 'https://github.com/01warrior/portfolio/blob/main/assets/docker.png?raw=true',color: 'from-blue-600 to-cyan-400', mastery: 85 },
-                { name: 'Flutter', icon: 'https://github.com/01warrior/portfolio/blob/main/assets/flutter.png?raw=true',color: 'from-blue-500 to-teal-400', mastery: 95 },
-                { name: 'SpringBoot', icon: 'https://github.com/01warrior/portfolio/blob/main/assets/spring.png?raw=true', color: 'from-green-600 to-lime-400', mastery: 75 },
+                { name: 'Flutter', icon: 'https://github.com/01warrior/portfolio/blob/main/assets/flutter.png?raw=true',color: 'from-blue-500 to-teal-400', mastery: 98 },
+                { name: 'SpringBoot', icon: 'https://github.com/01warrior/portfolio/blob/main/assets/spring.png?raw=true', color: 'from-green-600 to-lime-400', mastery: 70 },
                 { name: 'React.js', icon: 'https://github.com/01warrior/portfolio/blob/main/assets/react.png?raw=true',  color: 'from-cyan-400 to-blue-600', mastery: 90 },
                 { name: 'TailWind', icon: 'https://github.com/01warrior/portfolio/blob/main/assets/tailwindcss.png?raw=true',  color: 'from-cyan-500 to-sky-600', mastery: 95 },
-                { name: 'Python', icon: 'https://github.com/01warrior/portfolio/blob/main/assets/python.png?raw=true',color: 'from-blue-600 to-yellow-400', mastery: 70 },
+                { name: 'Python', icon: 'https://github.com/01warrior/portfolio/blob/main/assets/python.png?raw=true',color: 'from-blue-600 to-yellow-400', mastery: 60 },
                 { name: 'Wordpress', icon: 'https://github.com/01warrior/portfolio/blob/main/assets/wop.png?raw=true', color: 'from-blue-700 to-sky-400', mastery: 97 },
                 { name: 'Supabase', icon: 'https://github.com/01warrior/portfolio/blob/main/assets/supabase.png?raw=true',color: 'from-emerald-700 to-green-500', mastery: 85 },
-                { name: 'Canva', icon: 'https://github.com/01warrior/portfolio/blob/main/assets/canva.png?raw=true', color: 'from-teal-400 to-pink-400', mastery: 60 },
+                { name: 'Canva', icon: 'https://github.com/01warrior/portfolio/blob/main/assets/canva.png?raw=true', color: 'from-teal-400 to-pink-400', mastery: 90 },
                 { name: 'Figma', icon: 'https://github.com/01warrior/portfolio/blob/main/assets/figma.png?raw=true',  color: 'from-purple-600 to-pink-500', mastery: 75 },
                 { name: 'MySQL', icon: 'https://github.com/01warrior/portfolio/blob/main/assets/mysql.png?raw=true', color: 'from-blue-500 to-orange-400', mastery: 80 },
-                { name: 'Node.Js', icon: 'https://raw.githubusercontent.com/01warrior/portfolio/18aff3fa26c9d423d48d58c8de82a4fe00d8829f/assets/nodejs.svg',color: 'from-green-700 to-lime-500', mastery: 85 },
+                { name: 'Node.Js', icon: 'https://raw.githubusercontent.com/01warrior/portfolio/18aff3fa26c9d423d48d58c8de82a4fe00d8829f/assets/nodejs.svg',color: 'from-green-700 to-lime-500', mastery:80 },
               ].map((skill, index) => (
         <motion.div 
           key={index}
@@ -190,7 +190,7 @@ function App() {
             <img src={skill.icon} alt=""/>
           </div>
           <h3 className="text-xl font-bold text-gray-200">{skill.name}</h3>
-          <div className="mt-2 w-full bg-gray-800 rounded-full h-2">
+          <div className="mt-2 w-full bg-gray-800 rounded-full h-3">
             <div 
               className={`bg-gradient-to-r ${skill.color} h-3 rounded-full transition-all duration-1000`}
               style={{ width: `${skill.mastery}%` }}

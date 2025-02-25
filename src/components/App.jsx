@@ -90,8 +90,7 @@ function App() {
        
                  <p><span className="text-code-keyword">const</span> <span className="text-code-variable">moi</span> <span className="text-code-operator">=</span> <span className="text-code-string">"Soumaila SAVADOGO"</span><span className="text-code-punctuation">;</span></p>
                 <p><span className="text-code-keyword">const</span> <span className="text-code-variable">vibeCheck</span> <span className="text-code-operator">=</span> <span className="text-code-string">"95% de chance que vous kiffiez le résultat"</span><span className="text-code-punctuation">;</span></p>
-                <p><span className="text-code-keyword">let</span> <span className="text-code-variable">créativité</span> <span className="text-code-operator">=</span> <span className="text-code-number">Infinity</span><span className="text-code-punctuation">;</span></p>
-                <p><span className="text-code-keyword">const</span> <span className="text-code-variable">café</span> <span className="text-code-operator">=</span> <span className="text-code-string">"Code Fuel ☕️⚡️"</span><span className="text-code-punctuation">;</span></p>
+                <p><span className="text-code-keyword">let</span> <span className="text-code-variable">Qualité majeur</span> <span className="text-code-operator">=</span> <span className="text-code-number">Adaptabilité</span><span className="text-code-punctuation">;</span></p>
                 <p><span className="text-code-comment">// PS: Mon code est plus propre que mon bureau 😅</span></p>
     
         </div>
@@ -105,20 +104,14 @@ function App() {
   
   <div className="container mx-auto px-4 relative z-10">
     <h2 className="text-4xl lg:text-6xl font-bold mb-16 text-center bg-gradient-to-r from-blue-400 to-yellow-400 bg-clip-text text-transparent">
-      BioGraphie 
+      A propos de moi 
     </h2>
 
     <MacScreenMockup>
   <div className="text-sm md:text-lg font-mono p-4 md:p-6 space-y-4">
-    <p className="text-code-text">
-      Enfant, j'étais déjà celui qui réparait ce qui semblait irréparable : 
-      des radios qui ne marchaient plus, des lampes éteintes, des ordinateurs en panne. 
-      Le numérique, c'était comme une langue que je comprenais naturellement, 
-      sans avoir besoin de mode d'emploi.
-    </p>
 
     <p className="text-code-text">
-      Après un parcours scolaire sans vagues jusqu'au bac, j'ai choisi de donner 
+      Après un parcours scolaire sans vagues jusqu'au bac en 2021, j'ai choisi de donner 
       un sens à ma curiosité insatiable : l'informatique s'est révélée bien plus 
       qu'une discipline - un langage universel pour modeler demain. Pas question 
       de me contenter de suivre des cours : je voulais inventer, bousculer, accélérer. 
@@ -128,15 +121,14 @@ function App() {
 
     <p className="text-code-text">
       Aujourd'hui, je porte encore en moi cette fascination d'enfant pour 
-      les mystères technologiques, transformée en une expertise aiguisée. 
-      Chaque algorithme est une énigme à cracker, chaque innovation, 
-      une étincelle à nourrir. Mon histoire ? Celle d'un éternel curieux 
+      les mystères technologiques, transformée en une expertise aiguisée.
+      Mon histoire ? Celle d'un éternel curieux 
       qui a compris que l'avenir ne s'attend pas, il se code à la volée.
     </p>
 
     <p className="text-code-comment mt-6">
-      🚀 « Le digital n'est pas un outil, c'est une seconde peau. 
-      Et moi, je vis déjà dans demain. » 💻
+      « Le digital n'est pas un outil, c'est une seconde peau. 
+      Et moi, je vis déjà dans demain. »
     </p>
   </div>
 </MacScreenMockup>
@@ -220,7 +212,27 @@ function App() {
 
       <div className="bg-gray-700/50 rounded-lg p-6 transition-all duration-300 hover:bg-gray-700/70 relative glow-effect">
         {/* Conteneur d'image avec overflow hidden */}
-          <div className="h-48 w-full mb-4 rounded-lg overflow-hidden relative">
+          <div className="h50 w-full mb-4 rounded-lg overflow-hidden relative">
+          <img 
+            src="https://soumaila-savadogo.omnia-elearning.com/wp-content/uploads/2024/03/Minimal-Gradient-Modern-Animated-Marketing-Instagram-Reel-1080-x-900-px_20240401_222350_0000.png" // Chemin relatif depuis le dossier public
+            alt="Projet React" 
+            className="w-full h-full object-cover object-center transition-transform duration-300 hover:scale-105"
+            loading="lazy"
+          />
+          
+          {/* Overlay au survol */}
+          <div className="absolute inset-0 bg-black/50 opacity-0 hover:opacity-100 transition-opacity flex items-center justify-center">
+            <span className="text-white font-bold text-lg">Voir le projet →</span>
+          </div>
+          </div>
+
+          <h3 className="text-xl font-semibold mb-2">TondLaafi</h3>
+          <p className="text-gray-400">Application mobile de e-santé au burkina Faso pour L'ABBEF</p>
+      </div>
+
+      <div className="bg-gray-700/50 rounded-lg p-6 transition-all duration-300 hover:bg-gray-700/70 relative glow-effect">
+        {/* Conteneur d'image avec overflow hidden */}
+          <div className="h-50 w-full mb-4 rounded-lg overflow-hidden relative">
           <img 
             src="https://soumaila-savadogo.omnia-elearning.com/wp-content/uploads/2024/03/Minimal-Gradient-Modern-Animated-Marketing-Instagram-Reel-1080-x-900-px_20240401_222350_0000.png" // Chemin relatif depuis le dossier public
             alt="Projet React" 
@@ -235,7 +247,7 @@ function App() {
           </div>
 
           <h3 className="text-xl font-semibold mb-2">Docteur</h3>
-          <p className="text-gray-400">Application mobile avec Flutter une IA medecin</p>
+          <p className="text-gray-400">Application mobile avec Flutter une IA medecin avec Flutter,Dart Supabase</p>
       </div>
 
       <div className="bg-gray-700/50 rounded-lg p-6 transition-all duration-300 hover:bg-gray-700/70 relative glow-effect">
@@ -250,7 +262,7 @@ function App() {
           
           {/* Overlay au survol */}
           <div className="absolute inset-0 bg-black/50 opacity-0 hover:opacity-100 transition-opacity flex items-center justify-center">
-            <span className="text-white font-bold text-lg">Voir le projet →</span>
+            <span className="text-white font-bold text-lg"><a href="https://refletinfo.net/">Voir le projet →</a></span>
           </div>
           </div>
 
@@ -274,8 +286,8 @@ function App() {
           </div>
           </div>
 
-          <h3 className="text-xl font-semibold mb-2">Projet React</h3>
-          <p className="text-gray-400">Application web moderne avec React et TypeScript</p>
+          <h3 className="text-xl font-semibold mb-2">Stargate groups</h3>
+          <p className="text-gray-400">STARGATE GROUPS est spécialisée dans le domaine minier au Burkina</p>
       </div>
 
       <div className="bg-gray-700/50 rounded-lg p-6 transition-all duration-300 hover:bg-gray-700/70 relative glow-effect">
@@ -294,8 +306,8 @@ function App() {
           </div>
           </div>
 
-          <h3 className="text-xl font-semibold mb-2">Projet React</h3>
-          <p className="text-gray-400">Application web moderne avec React et TypeScript</p>
+          <h3 className="text-xl font-semibold mb-2">Clone WhatsApp</h3>
+          <p className="text-gray-400">Un clone WhatsApp UI avec Flutter </p>
       </div>
 
       <div className="bg-gray-700/50 rounded-lg p-6 transition-all duration-300 hover:bg-gray-700/70 relative glow-effect">
@@ -314,8 +326,8 @@ function App() {
           </div>
           </div>
 
-          <h3 className="text-xl font-semibold mb-2">Projet React</h3>
-          <p className="text-gray-400">Application web moderne avec React et TypeScript</p>
+          <h3 className="text-xl font-semibold mb-2">FruitsMark</h3>
+          <p className="text-gray-400">Application de vente de fruits et légumes design UI</p>
       </div>
 
       <div className="bg-gray-700/50 rounded-lg p-6 transition-all duration-300 hover:bg-gray-700/70 relative glow-effect">
@@ -334,8 +346,8 @@ function App() {
           </div>
           </div>
 
-          <h3 className="text-xl font-semibold mb-2">Projet React</h3>
-          <p className="text-gray-400">Application web moderne avec React et TypeScript</p>
+          <h3 className="text-xl font-semibold mb-2">AV</h3>
+          <p className="text-gray-400">Jeu interactif amusant Action ou verité avec flutter</p>
       </div>
 
       
@@ -348,7 +360,7 @@ function App() {
   
   <div className="container mx-auto px-4 relative z-10">
     <h2 className="text-4xl lg:text-6xl font-bold mb-16 text-center bg-gradient-to-r from-yellow-400 to-blue-400 bg-clip-text text-transparent">
-      On parle de votre projet
+      Parlons de votre projet
     </h2>
     
 

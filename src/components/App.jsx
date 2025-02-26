@@ -106,7 +106,7 @@ function App() {
     <motion.a
       whileHover={{ scale: 1.05 }}
       whileTap={{ scale: 0.95 }}
-      href="https://github.com/01warrior/portfolio/blob/main/assets/CV%20soumaila%20savadogo%2011-02.pdf"
+      href="01warrior/portfolio/assets/CV soumaila savadogo 11-02.pdf"
       download
       className="px-8 py-4 rounded-full bg-gradient-to-r from-blue-400 to-yellow-400 hover:from-yellow-400 hover:to-blue-400 transition-all duration-300 group relative overflow-hidden"
     >
@@ -522,7 +522,7 @@ function App() {
     <motion.a
       whileHover={{ scale: 1.05 }}
       whileTap={{ scale: 0.95 }}
-      href="https://github.com/01warrior/portfolio/blob/main/assets/CV%20soumaila%20savadogo%2011-02.pdf" // Fichier placé dans le dossier public
+      href="01warrior/portfolio/assets/CV soumaila savadogo 11-02.pdf" // Fichier placé dans le dossier public
       download="CV_Soumaila_Savadogo.pdf"
       className="px-8 py-4 rounded-full bg-gradient-to-r from-blue-400 to-yellow-400 hover:from-yellow-400 hover:to-blue-400 transition-all duration-300 group relative overflow-hidden"
     >

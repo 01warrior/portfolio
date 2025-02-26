@@ -112,11 +112,10 @@ function App() {
     >
       {/* Effet de lumière au survol */}
       <div className="absolute inset-0 bg-white/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300 blur-md"></div>
-      
       <div className="flex items-center gap-3 relative">
         <HiDownload className="h-6 w-6 text-slate-900" />
         <span className="text-lg font-bold bg-clip-text text-transparent bg-gradient-to-r from-slate-900 to-slate-800">
-          Télécharger mon CV
+          Mon CV
         </span>
         <span className="text-slate-900 text-sm">(PDF, 849Ko)</span>
       </div>

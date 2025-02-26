@@ -102,7 +102,7 @@ function Appbar() {
                   smooth={true}
                   duration={500}
                   onClick={() => setIsMenuOpen(false)}
-                  className="px-4 py-3 text-gray-300 hover:text-purple-400 hover:bg-gray-800/50 transition-all"
+                  className="px-4 py-3 text-gray-300 hover:text-yellow-400 hover:bg-gray-800/50 transition-all"
                 >
                   {link.label}
                 </Link>

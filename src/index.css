@@ -5,7 +5,7 @@
 
 @layer utilities {
 
-  /* debu animation peinture */
+  /* debut animation peinture */
   @keyframes brushStroke {
       0% {
         stroke-dashoffset: 1;

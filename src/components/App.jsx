@@ -5,6 +5,11 @@ import AnimatedText from './AnimatedText';
 import { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 
+// Par ces imports séparés :
+import { FiMail, FiPhone } from "react-icons/fi"; // Feather Icons
+import { FaGithub, FaLinkedin, FaFacebook } from "react-icons/fa"; // Font Awesome
+import { HiDownload } from "react-icons/hi"; // Heroicons
+
 export function CursorEffect() {
   const [position, setPosition] = useState({ x: 0, y: 0 });
   const [isHovering, setIsHovering] = useState(false);
@@ -95,6 +100,29 @@ function App() {
     
         </div>
       </MacScreenMockup>
+
+      {/* bouton telecharger cv */}
+    <div className="mt-12 flex justify-center">
+    <motion.a
+      whileHover={{ scale: 1.05 }}
+      whileTap={{ scale: 0.95 }}
+      href="https://github.com/01warrior/portfolio/blob/main/assets/CV%20soumaila%20savadogo%2011-02.pdf"
+      download
+      className="px-8 py-4 rounded-full bg-gradient-to-r from-blue-400 to-yellow-400 hover:from-yellow-400 hover:to-blue-400 transition-all duration-300 group relative overflow-hidden"
+    >
+      {/* Effet de lumière au survol */}
+      <div className="absolute inset-0 bg-white/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300 blur-md"></div>
+      
+      <div className="flex items-center gap-3 relative">
+        <HiDownload className="h-6 w-6 text-slate-900" />
+        <span className="text-lg font-bold bg-clip-text text-transparent bg-gradient-to-r from-slate-900 to-slate-800">
+          Télécharger mon CV
+        </span>
+        <span className="text-slate-900 text-sm">(PDF, 849Ko)</span>
+      </div>
+    </motion.a>
+  </div>
+  
     </div>
   </div>
 </section>
@@ -434,9 +462,9 @@ function App() {
           <div className="absolute -inset-4 bg-gradient-to-tr from-blue-400/20 to-yellow-400/20 blur-2xl rounded-xl"></div>
           <div className="relative space-y-6">
             <div className="flex items-center gap-4 p-4 hover:bg-gray-800/50 rounded-xl transition-all">
-              <div className="text-3xl bg-gradient-to-r from-blue-400 to-yellow-400 bg-clip-text text-transparent">
-                📧
-              </div>
+              
+              <FiMail className="h-10 w-10" /> {/* Icône Email */}
+             
               <div>
                 <p className="text-gray-400">Email</p>
                 <a href="mailto:soumailasavadogo201@gmail.com" className="text-lg text-gray-200 hover:text-yellow-400 transition-colors">
@@ -447,9 +475,9 @@ function App() {
             </div>
 
             <div className="flex items-center gap-4 p-4 hover:bg-gray-800/50 rounded-xl transition-all">
-              <div className="text-3xl bg-gradient-to-r from-blue-400 to-yellow-400 bg-clip-text text-transparent">
-                📱
-              </div>
+              
+              <FiPhone className="h-10 w-10" /> 
+
               <div>
                 <p className="text-gray-400">Téléphone</p>
                 <a href="tel:+212 665-122930" className="text-lg text-gray-200 hover:text-yellow-400 transition-colors">
@@ -464,9 +492,9 @@ function App() {
         {/* Réseaux sociaux avec animations */}
         <div className="flex-1 flex flex-col justify-center space-y-6">
           {[
-            { name: 'GitHub', icon: '💻', color: 'from-blue-900 to-pink-500' ,lien:'https://github.com/01warrior'},
-            { name: 'LinkedIn', icon: '🔗', color: 'from-blue-950 to-cyan-400',lien:'https://www.linkedin.com/in/savadogo-souma%C3%AFla-6694b9243/' },
-            { name: 'Facebook', icon: '🐦', color: 'from-sky-900 to-blue-600' ,lien:'https://github.com/01warrior'}
+            { name: 'GitHub', icon: <FaGithub className="h-8 w-8" />, color: 'from-blue-900 to-pink-500' ,lien:'https://github.com/01warrior'},
+            { name: 'LinkedIn', icon: <FaLinkedin className="h-8 w-8" />, color: 'from-blue-950 to-cyan-400',lien:'https://www.linkedin.com/in/savadogo-souma%C3%AFla-6694b9243/' },
+            { name: 'Facebook', icon: <FaFacebook className="h-8 w-8" />, color: 'from-sky-900 to-blue-600' ,lien:'https://github.com/01warrior'}
           ].map((social, index) => (
             <motion.a
               key={index}
@@ -494,16 +522,17 @@ function App() {
     <motion.a
       whileHover={{ scale: 1.05 }}
       whileTap={{ scale: 0.95 }}
-      href="https://github.com/01warrior/portfolio/blob/main/assets/CV%20soumaila%20savadogo%2011-02.pdf"
-      download
+      href="https://github.com/01warrior/portfolio/blob/main/assets/CV%20soumaila%20savadogo%2011-02.pdf" // Fichier placé dans le dossier public
+      download="CV_Soumaila_Savadogo.pdf"
       className="px-8 py-4 rounded-full bg-gradient-to-r from-blue-400 to-yellow-400 hover:from-yellow-400 hover:to-blue-400 transition-all duration-300 group relative overflow-hidden"
     >
       {/* Effet de lumière au survol */}
       <div className="absolute inset-0 bg-white/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300 blur-md"></div>
       
       <div className="flex items-center gap-3 relative">
+        <HiDownload className="h-6 w-6 text-slate-900" />
         <span className="text-lg font-bold bg-clip-text text-transparent bg-gradient-to-r from-slate-900 to-slate-800">
-          📥 Télécharger mon CV
+           Télécharger mon CV
         </span>
         <span className="text-slate-900 text-sm">(PDF, 849Ko)</span>
       </div>

@@ -5,7 +5,6 @@ import AnimatedText from './AnimatedText';
 import { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 
-// Par ces imports séparés :
 import { FiMail, FiPhone } from "react-icons/fi"; // Feather Icons
 import { FaGithub, FaLinkedin, FaFacebook } from "react-icons/fa"; // Font Awesome
 import { HiDownload } from "react-icons/hi"; // Heroicons
@@ -138,12 +137,10 @@ function App() {
   <div className="text-sm md:text-lg font-mono p-4 md:p-6 space-y-4">
 
     <p className="text-code-text">
-      Après un parcours scolaire sans vagues jusqu'au bac en 2021, j'ai choisi de donner 
+      Après un parcours scolaire sans vagues jusqu'au BAC en 2021, j'ai choisi de donner 
       un sens à ma curiosité insatiable : l'informatique s'est révélée bien plus 
-      qu'une discipline - un langage universel pour modeler demain. Pas question 
-      de me contenter de suivre des cours : je voulais inventer, bousculer, accélérer. 
+      qu'une discipline - un langage universel pour modeler demain. Je voulais inventer, bousculer, accélérer. 
       Trois ans plus tard, je décrochais ma licence en session anticipée. 
-      Parce que la passion, ça ne se met pas en attente.
     </p>
 
     <p className="text-code-text">

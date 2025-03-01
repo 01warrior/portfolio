@@ -1,168 +1,94 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 @layer utilities {
 
-  /* debut animation peinture */
-  @keyframes brushStroke {
-      0% {
-        stroke-dashoffset: 1;
-        opacity: 0.2;
-      }
-  
-      100% {
-        stroke-dashoffset: 0;
-        opacity: 0.4;
-      }
-    }
-  
-    .animate-brushStroke {
-      stroke-dasharray: 1;
-      animation: brushStroke 2s ease-out forwards;
-    }
-
-    /* fin animation peinture */
-
+  /* ========== Configuration de base ========== */
   html,
-    body {
-      overflow-x: hidden;
-      max-width: 100vw;
-    }
-
-  /* animation degradé mouvement debut*/
-
-  @keyframes pulse-slow {
-  
-      0%,
-      100% {
-        opacity: 0.2;
-      }
-  
-      50% {
-        opacity: 0.4;
-      }
-    }
-    
-  
-    @keyframes glow {
-  
-      0%,
-      100% {
-        opacity: 0.7;
-        transform: scale(1);
-      }
-  
-      50% {
-        opacity: 1;
-        transform: scale(1.02);
-      }
-    }
-  
-    .animate-pulse-slow {
-      animation: pulse-slow 1000s ease-in-out infinite;
-    }
-  
-    .animate-pulse-slow-delayed {
-      animation: pulse-slow 1000s ease-in-out infinite 1000s;
-    }
-  
-    .animate-glow {
-      animation: glow 1000s ease-in-out infinite;
-    }
-
-    /* animation degradé mouvement fin*/
-
-        .glow-effect {
-          transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
-    
-        .group:hover .glow-effect:hover {
-          transform: translateY(-5px);
-          box-shadow: 0 0 30px rgba(255, 255, 255, 0.1);
-        }
-    
-        /* Effet d'illumination au survol */
-        .glow-effect:hover::before {
-          content: '';
-          position: absolute;
-          top: 0;
-          left: 0;
-          right: 0;
-          bottom: 0;
-          background: radial-gradient(circle at var(--x) var(--y),
-              rgba(227, 255, 68, 0.1) 0%,
-              transparent 70%);
-          pointer-events: none;
-          z-index: 1;
-        }
-
-
-        /* effet curseur fin */
-        
-
-  @keyframes blink {
-  
-      0%,
-      100% {
-        border-color: transparent
-      }
-  
-      50% {
-        border-color: #ccc315
-      }
-    }
-  
-    .animate-blink {
-      animation: blink 1s step-end infinite;
-    }
-
-
-  
-    
-
-  .text-code-keyword {
-      color: #c678dd;
-    }
-  
-    /* Violet/Magenta pour les mots-clés (const, let, function...) */
-    .text-code-variable {
-      color: #abb2bf;
-    }
-  
-    /* Gris clair pour les noms de variables */
-    .text-code-operator {
-      color: #e06c75;
-    }
-  
-    /* Rouge/Rose pour les opérateurs (=, +, -, ...) */
-    .text-code-string {
-      color: #98c379;
-    }
-  
-    /* Vert pour les chaînes de caractères */
-    .text-code-punctuation {
-      color: #abb2bf;
-    }
-  
-    /* Gris clair pour la ponctuation (;, ., {}, []) */
-    .text-code-comment {
-      color: #5c6370;
-      font-style: italic;
-    }
-  
-    /* Gris foncé et italique pour les commentaires */
-
-    
-  .bg-grid-animated {
-    background-image: linear-gradient(0deg, transparent 24%, rgba(90, 90, 90, 0.1) 25%, rgba(90, 90, 90, 0.1) 26%, transparent 27%, transparent 74%, rgba(90, 90, 90, 0.1) 75%, rgba(90, 90, 90, 0.1) 76%, transparent 77%, transparent),
-    linear-gradient(90deg, transparent 24%, rgba(90, 90, 90, 0.1) 25%, rgba(90, 90, 90, 0.1) 26%, transparent 27%, transparent 74%, rgba(90, 90, 90, 0.1) 75%, rgba(90, 90, 90, 0.1) 76%, transparent 77%, transparent);
-    background-size: 100px 140px;
-    animation: grid-pan 60s linear infinite;
-    /* Animation de déplacement de la grille */
+  body {
+    overflow-x: hidden;
+    max-width: 100vw;
   }
 
+  /* ========== Animations ========== */
+  /* Animation pinceau */
+  @keyframes brushStroke {
+    0% {
+      stroke-dashoffset: 1;
+      opacity: 0.2;
+    }
+
+    100% {
+      stroke-dashoffset: 0;
+      opacity: 0.4;
+    }
+  }
+
+  .animate-brushStroke {
+    stroke-dasharray: 1;
+    animation: brushStroke 2s ease-out forwards;
+  }
+
+  /* Animation pulsation */
+  @keyframes pulse-slow {
+
+    0%,
+    100% {
+      opacity: 0.2;
+    }
+
+    50% {
+      opacity: 0.4;
+    }
+  }
+
+  @keyframes glow {
+
+    0%,
+    100% {
+      opacity: 0.7;
+      transform: scale(1);
+    }
+
+    50% {
+      opacity: 1;
+      transform: scale(1.02);
+    }
+  }
+
+  .animate-pulse-slow {
+    animation: pulse-slow 1000s ease-in-out infinite;
+  }
+
+  .animate-pulse-slow-delayed {
+    animation: pulse-slow 1000s ease-in-out infinite 1000s;
+  }
+
+  .animate-glow {
+    animation: glow 1000s ease-in-out infinite;
+  }
+
+  /* Animation clignotement */
+  @keyframes blink {
+
+    0%,
+    100% {
+      border-color: transparent;
+    }
+
+    50% {
+      border-color: #ccc315;
+    }
+  }
+
+  .animate-blink {
+    animation: blink 1s step-end infinite;
+  }
+
+  /* Animation grille */
   @keyframes grid-pan {
     0% {
       background-position: 0% 0%;
@@ -172,6 +98,71 @@
       background-position: 100% 100%;
     }
   }
-  
-}
 
+  /* ========== Effets visuels ========== */
+  /* Effet de survol */
+  .glow-effect {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .group:hover .glow-effect:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 30px rgba(255, 255, 255, 0.1);
+  }
+
+  /* Effet d'illumination */
+  .glow-effect:hover::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: radial-gradient(circle at var(--x) var(--y),
+        rgba(227, 255, 68, 0.1) 0%,
+        transparent 70%);
+    pointer-events: none;
+    z-index: 1;
+  }
+
+  /* Grille animée */
+  .bg-grid-animated {
+    background-image:
+      linear-gradient(0deg, transparent 24%, rgba(90, 90, 90, 0.1) 25%, rgba(90, 90, 90, 0.1) 26%, transparent 27%, transparent 74%, rgba(90, 90, 90, 0.1) 75%, rgba(90, 90, 90, 0.1) 76%, transparent 77%, transparent),
+      linear-gradient(90deg, transparent 24%, rgba(90, 90, 90, 0.1) 25%, rgba(90, 90, 90, 0.1) 26%, transparent 27%, transparent 74%, rgba(90, 90, 90, 0.1) 75%, rgba(90, 90, 90, 0.1) 76%, transparent 77%, transparent);
+    background-size: 100px 140px;
+    animation: grid-pan 60s linear infinite;
+  }
+
+  /* ========== Styles spécifiques au code ========== */
+  .text-code-keyword {
+    color: #c678dd;
+  }
+
+  /* Violet/Magenta */
+  .text-code-variable {
+    color: #abb2bf;
+  }
+
+  /* Gris clair */
+  .text-code-operator {
+    color: #e06c75;
+  }
+
+  /* Rouge/Rose */
+  .text-code-string {
+    color: #98c379;
+  }
+
+  /* Vert */
+  .text-code-punctuation {
+    color: #abb2bf;
+  }
+
+  /* Gris clair */
+  .text-code-comment {
+    /* Commentaires */
+    color: #5c6370;
+    font-style: italic;
+  }
+}

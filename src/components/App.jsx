@@ -105,7 +105,7 @@ function App() {
     <motion.a
       whileHover={{ scale: 1.05 }}
       whileTap={{ scale: 0.95 }}
-      href="#"
+      href=""
       download
       className="px-8 py-4 rounded-full bg-gradient-to-r from-blue-400 to-yellow-400 hover:from-yellow-400 hover:to-blue-400 transition-all duration-300 group relative overflow-hidden"
     >
@@ -518,7 +518,7 @@ function App() {
     <motion.a
       whileHover={{ scale: 1.05 }}
       whileTap={{ scale: 0.95 }}
-      href="#" // Fichier placé dans le dossier public
+      href="" // Fichier placé dans le dossier public
       download="CV_Soumaila_Savadogo.pdf"
       className="px-8 py-4 rounded-full bg-gradient-to-r from-blue-400 to-yellow-400 hover:from-yellow-400 hover:to-blue-400 transition-all duration-300 group relative overflow-hidden"
     >

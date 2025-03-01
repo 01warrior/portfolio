@@ -105,7 +105,7 @@ function App() {
     <motion.a
       whileHover={{ scale: 1.05 }}
       whileTap={{ scale: 0.95 }}
-      href="href=https://raw.githubusercontent.com/01warrior/portfolio/main/assets/CV%20soumaila%20savadogo%2011-02.pdf"
+      href="#"
       download
       className="px-8 py-4 rounded-full bg-gradient-to-r from-blue-400 to-yellow-400 hover:from-yellow-400 hover:to-blue-400 transition-all duration-300 group relative overflow-hidden"
     >
@@ -490,7 +490,7 @@ function App() {
           {[
             { name: 'GitHub', icon: <FaGithub className="h-8 w-8" />, color: 'from-blue-900 to-pink-500' ,lien:'https://github.com/01warrior'},
             { name: 'LinkedIn', icon: <FaLinkedin className="h-8 w-8" />, color: 'from-blue-950 to-cyan-400',lien:'https://www.linkedin.com/in/savadogo-souma%C3%AFla-6694b9243/' },
-            { name: 'Facebook', icon: <FaFacebook className="h-8 w-8" />, color: 'from-sky-900 to-blue-600' ,lien:'https://github.com/01warrior'}
+            { name: 'Facebook', icon: <FaFacebook className="h-8 w-8" />, color: 'from-sky-900 to-blue-600' ,lien:'https://web.facebook.com/profile.php?id=100092271310878&_rdc=2&_rdr#'}
           ].map((social, index) => (
             <motion.a
               key={index}
@@ -518,7 +518,7 @@ function App() {
     <motion.a
       whileHover={{ scale: 1.05 }}
       whileTap={{ scale: 0.95 }}
-      href="href=https://raw.githubusercontent.com/01warrior/portfolio/main/assets/CV%20soumaila%20savadogo%2011-02.pdf" // Fichier placé dans le dossier public
+      href="#" // Fichier placé dans le dossier public
       download="CV_Soumaila_Savadogo.pdf"
       className="px-8 py-4 rounded-full bg-gradient-to-r from-blue-400 to-yellow-400 hover:from-yellow-400 hover:to-blue-400 transition-all duration-300 group relative overflow-hidden"
     >

@@ -1,10 +1,20 @@
-import React from 'react';
-import { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link } from 'react-scroll';
 import { motion } from 'framer-motion';
 
 function Appbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  // Gestion du scroll
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 50);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
 
   const navLinks = [
     { id: 'presentation', label: 'Accueil' },
@@ -13,17 +23,17 @@ function Appbar() {
     { id: 'contact', label: 'Contact' }
   ];
 
-  // Animation variants pour le menu
   const menuVariants = {
     open: { opacity: 1, y: 0 },
     closed: { opacity: 0, y: -20 }
   };
 
   return (
-    <nav className="w-full z-50 bg-gray-900/80 backdrop-blur-sm border-b border-gray-700 font-Poppins relative">
+    <nav className={`w-full z-50 bg-gray-900/80 backdrop-blur-sm border-b border-gray-700 font-Poppins fixed top-0 transition-all duration-300 ${isScrolled ? 'shadow-xl' : 'shadow-none'}`}>
       <div className="container mx-auto px-4">
         <div className="flex justify-between items-center h-16">
-          {/* Logo avec animation au hover */}
+          
+          {/* Logo */}
           <motion.span 
             whileHover={{ scale: 1.05 }}
             className="text-xl font-bold bg-gradient-to-r from-blue-400 to-yellow-400 bg-clip-text text-transparent"
@@ -31,7 +41,7 @@ function Appbar() {
             S.SAVADOGO
           </motion.span>
 
-          {/* Menu Desktop avec effets améliorés */}
+          {/* Menu Desktop */}
           <div className="hidden lg:flex space-x-8">
             {navLinks.map((link) => (
               <motion.div
@@ -52,12 +62,10 @@ function Appbar() {
                     {link.label}
                   </span>
                   
-                  {/* Fond dégradé animé */}
                   <div className="absolute inset-0 bg-gradient-to-r from-blue-400/20 to-purple-500/20 
                                 opacity-0 group-hover:opacity-100 transition-opacity duration-300
                                 rounded-full scale-75 group-hover:scale-100" />
                   
-                  {/* Animation de soulignement dynamique */}
                   <motion.div
                     className="absolute bottom-0 left-0 right-0 w-full h-0.5 bg-purple-400"
                     initial={{ scaleX: 0 }}
@@ -69,7 +77,7 @@ function Appbar() {
             ))}
           </div>
 
-          {/* Hamburger Menu Mobile avec animation */}
+          {/* Bouton Mobile */}
           <motion.button
             onClick={() => setIsMenuOpen(!isMenuOpen)}
             whileHover={{ scale: 1.1 }}
@@ -82,7 +90,7 @@ function Appbar() {
           </motion.button>
         </div>
 
-        {/* Menu Mobile avec animations */}
+        {/* Menu Mobile */}
         <motion.div
           initial="closed"
           animate={isMenuOpen ? "open" : "closed"}

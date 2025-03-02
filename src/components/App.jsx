@@ -204,6 +204,8 @@ function App() {
                 { name: 'Figma', icon: 'https://github.com/01warrior/portfolio/blob/main/assets/figma.png?raw=true',  color: 'from-purple-600 to-pink-500', mastery: 75 },
                 { name: 'MySQL', icon: 'https://github.com/01warrior/portfolio/blob/main/assets/mysql.png?raw=true', color: 'from-blue-500 to-orange-400', mastery: 80 },
                 { name: 'Node.Js', icon: 'https://raw.githubusercontent.com/01warrior/portfolio/18aff3fa26c9d423d48d58c8de82a4fe00d8829f/assets/nodejs.svg',color: 'from-green-700 to-lime-500', mastery:80 },
+                { name: 'Git', icon: 'https://raw.githubusercontent.com/01warrior/portfolio/18aff3fa26c9d423d48d58c8de82a4fe00d8829f/assets/nodejs.svg',color: 'from-green-700 to-lime-500', mastery:80 },
+                { name: 'GitHub', icon: 'https://raw.githubusercontent.com/01warrior/portfolio/18aff3fa26c9d423d48d58c8de82a4fe00d8829f/assets/nodejs.svg',color: 'from-green-700 to-lime-500', mastery:87 },
               ].map((skill, index) => (
         <motion.div 
           key={index}

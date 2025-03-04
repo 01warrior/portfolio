@@ -396,7 +396,7 @@ function App() {
           </div>
 
           <h3 className="text-xl font-semibold mb-2">Fun</h3>
-          <p className="text-gray-400">Application de chat permettant de discuter avc nimporte qui alimenté par ia</p>
+          <p className="text-gray-400">Application de chat permettant de discuter avec nimporte qui alimenté par ia</p>
       </div>
 
       <div className="bg-gray-700/50 rounded-lg p-6 transition-all duration-300 hover:bg-gray-700/70 relative glow-effect">

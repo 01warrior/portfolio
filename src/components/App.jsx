@@ -275,7 +275,7 @@ function App() {
           </div>
 
           <h3 className="text-xl font-semibold mb-2">Site de media</h3>
-          <p className="text-gray-400">Site de de media Reflet info</p>
+          <p className="text-gray-400">Site de media Reflet info</p>
       </div>
 
       <div className="bg-gray-700/50 rounded-lg p-6 transition-all duration-300 hover:bg-gray-700/70 relative glow-effect">
@@ -513,28 +513,6 @@ function App() {
       <div className="absolute -top-20 -right-20 w-64 h-64 bg-gradient-to-r from-blue-400/20 to-yellow-400/20 rounded-full blur-3xl animate-float"></div>
     
     </div>
-  </div>
-
-  {/* bouton telecharger cv */}
-    <div className="mt-12 flex justify-center">
-    <motion.a
-      whileHover={{ scale: 1.05 }}
-      whileTap={{ scale: 0.95 }}
-      href="" // Fichier placé dans le dossier public
-      download="CV_Soumaila_Savadogo.pdf"
-      className="px-8 py-4 rounded-full bg-gradient-to-r from-blue-400 to-yellow-400 hover:from-yellow-400 hover:to-blue-400 transition-all duration-300 group relative overflow-hidden"
-    >
-      {/* Effet de lumière au survol */}
-      <div className="absolute inset-0 bg-white/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300 blur-md"></div>
-      
-      <div className="flex items-center gap-3 relative">
-        <HiDownload className="h-6 w-6 text-slate-900" />
-        <span className="text-lg font-bold bg-clip-text text-transparent bg-gradient-to-r from-slate-900 to-slate-800">
-           Télécharger mon CV
-        </span>
-        <span className="text-slate-900 text-sm">(PDF, 849Ko)</span>
-      </div>
-    </motion.a>
   </div>
 
 </section>

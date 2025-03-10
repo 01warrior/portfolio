@@ -95,7 +95,8 @@ function Appbar() {
           initial="closed"
           animate={isMenuOpen ? "open" : "closed"}
           variants={menuVariants}
-          className="lg:hidden absolute top-16 left-0 right-0 bg-gray-900/95 backdrop-blur-sm overflow-hidden"
+          className="lg:hidden absolute top-16 left-0 right-0 bg-gray-900/100 backdrop-blur-sm overflow-hidden"
+          
         >
           <div className="flex flex-col space-y-4 p-6">
             {navLinks.map((link) => (
@@ -112,6 +113,7 @@ function Appbar() {
                   duration={500}
                   onClick={() => setIsMenuOpen(false)}
                   className="block px-6 py-4 text-gray-300 hover:text-yellow-400 hover:bg-gray-800/50 transition-all rounded-lg border border-gray-700/50 hover:border-yellow-400/50 shadow-lg"
+                  activeClass="!text-yellow-400 !border-yellow-400/50 !bg-gray-800/50"
                 >
                   {link.label}
                 </Link>

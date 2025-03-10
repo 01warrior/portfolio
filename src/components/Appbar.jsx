@@ -59,7 +59,7 @@ function Appbar() {
                   className="relative px-4 py-2 overflow-hidden group"
                   activeClass="active-link"
                 >
-                  <span className="relative z-10 text-gray-300 group-hover:text-purple-400 transition-colors">
+                  <span className="relative z-10 text-gray-300 group-hover:text-yellow-400 transition-colors">
                     {link.label}
                   </span>
                   

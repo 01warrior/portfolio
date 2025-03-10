@@ -18,6 +18,7 @@ function Appbar() {
 
   const navLinks = [
     { id: 'presentation', label: 'Accueil' },
+    { id: 'about', label: 'A propos' },
     { id: 'projets', label: 'Projets' },
     { id: 'competences', label: 'Compétences' },
     { id: 'contact', label: 'Contact' }
@@ -96,7 +97,7 @@ function Appbar() {
           animate={isMenuOpen ? "open" : "closed"}
           variants={menuVariants}
           className="lg:hidden absolute top-16 left-0 right-0 bg-gray-900/100 backdrop-blur-sm overflow-hidden"
-          
+
         >
           <div className="flex flex-col space-y-4 p-6">
             {navLinks.map((link) => (

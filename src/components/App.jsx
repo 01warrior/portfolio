@@ -125,7 +125,7 @@ function App() {
   </div>
 </section>
 
-<section id="competences" className="py-16 lg:py-20  bg-slate-950 relative overflow-hidden">
+<section id="about" className="py-16 lg:py-20  bg-slate-950 relative overflow-hidden">
   <div className="absolute inset-0 bg-fractal-pattern opacity-10 animate-pan"></div>
   
   <div className="container mx-auto px-4 relative z-10">

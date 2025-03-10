@@ -86,12 +86,12 @@ function App() {
 
   <div className="absolute inset-0 bg-grid-animated pointer-events-none" aria-hidden="true"></div>
   
-  <div className="container mx-auto px-4 mt-14 relative">
+  <div className="container mx-auto px-4 mt-5 relative">
     
     <AnimatedText />
 
     {/* Effet de halo autour du MacScreenMockup */}
-    <div className="relative mt-12 lg:mt-10">
+    <div className="relative mt-5 lg:mt-10">
       <div className="absolute -inset-8 bg-gradient-to-r from-purple-500/30 to-blue-500/30 rounded-xl blur-3xl -z-10 animate-glow" />
       <MacScreenMockup>
         <div className="text-sm md:text-lg font-mono p-4 md:p-6">
@@ -112,10 +112,6 @@ function App() {
       href="https://drive.google.com/uc?export=download&id=1G5HeypmtCJVksBTsUK7jetFZG5Z3S0xT"
       download
       className="px-8 py-4 rounded-full bg-gradient-to-r from-blue-400 to-yellow-400 hover:from-yellow-400 hover:to-blue-400 transition-all duration-300 group relative overflow-hidden"
-      onClick={(e) => {
-      e.preventDefault(); // Empêche le comportement par défaut
-      window.location.href = "https://drive.google.com/uc?export=download&id=1G5HeypmtCJVksBTsUK7jetFZG5Z3S0xT";
-  }}
     >
       {/* Effet de lumière au survol */}
       <div className="absolute inset-0 bg-white/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300 blur-md"></div>
@@ -172,7 +168,7 @@ function App() {
       <path 
         d="M12.3 184C38 178 120.7 137.7 185 118c78.7-24.1 155.7-17.3 215-9 86.8 12.1 172 37.7 172 37.7" 
         stroke="url(#paint-gradient)" 
-        stroke-width="30" 
+        stroke-width="90" 
         stroke-linecap="round"
         fill="none"
         pathLength="1"
@@ -520,7 +516,7 @@ function App() {
         {/* Réseaux sociaux avec animations */}
         <div className="flex-1 flex flex-col justify-center space-y-6">
           {[
-            { name: 'GitHub', icon: <FaGithub className="h-8 w-8" />, color: 'from-blue-900 to-pink-500' ,lien:'https://github.com/01warrior'},
+            { name: 'GitHub', icon: <FaGithub className="h-8 w-8" />, color: 'from-blue-900 to-pink-500' ,lien:'https://github.com/01warrior/'},
             { name: 'LinkedIn', icon: <FaLinkedin className="h-8 w-8" />, color: 'from-blue-950 to-cyan-400',lien:'https://www.linkedin.com/in/savadogo-souma%C3%AFla-6694b9243/' },
             { name: 'Facebook', icon: <FaFacebook className="h-8 w-8" />, color: 'from-sky-900 to-blue-600' ,lien:'https://web.facebook.com/profile.php?id=100092271310878&_rdc=2&_rdr#'}
           ].map((social, index) => (
@@ -550,7 +546,7 @@ function App() {
     <motion.a
       whileHover={{ scale: 1.05 }}
       whileTap={{ scale: 0.95 }}
-      href=""
+      href="#"
       download
       className="px-8 py-4 rounded-full bg-gradient-to-r from-blue-400 to-yellow-400 hover:from-yellow-400 hover:to-blue-400 transition-all duration-300 group relative overflow-hidden"
     >

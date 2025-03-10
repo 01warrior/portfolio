@@ -284,7 +284,7 @@ function App() {
         {/* Conteneur d'image avec overflow hidden */}
           <div className="h-48 w-full mb-4 rounded-lg overflow-hidden relative">
           <img 
-            src="https://soumaila-savadogo.omnia-elearning.com/wp-content/uploads/2024/03/Capture-decran-2023-04-10-133548.png" // Chemin relatif depuis le dossier public
+            src="https://github.com/01warrior/portfolio/blob/main/assets/scoop.png?raw=true" // Chemin relatif depuis le dossier public
             alt="Projet React" 
             className="w-full h-full object-cover object-center transition-transform duration-300 hover:scale-105"
             loading="lazy"

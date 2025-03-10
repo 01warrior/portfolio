@@ -117,7 +117,7 @@ function App() {
         <span className="text-lg font-bold bg-clip-text text-transparent bg-gradient-to-r from-slate-900 to-slate-800">
           Telecharger Fun
         </span>
-        <span className="text-slate-900 text-sm">(PDF, 849Ko)</span>
+        <span className="text-slate-900 text-sm">(Apk, 28Mo)</span>
       </div>
     </motion.a>
     </div>

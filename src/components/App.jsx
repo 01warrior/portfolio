@@ -72,7 +72,7 @@ function App() {
   return (
     <div className="bg-gray-900 text-white">
       <Appbar />
-      
+
       <ScrollToTop />
 
   <main>
@@ -108,7 +108,7 @@ function App() {
     <div className="mt-12 flex justify-center">
     <motion.a
       whileHover={{ scale: 1.05 }}
-      whileTap={{ scale: 0.95 }}
+      whileTap={{ scale: 0.85 }}
       href="https://drive.google.com/uc?export=download&id=1G5HeypmtCJVksBTsUK7jetFZG5Z3S0xT"
       download
       className="px-8 py-4 rounded-full bg-gradient-to-r from-blue-400 to-yellow-400 hover:from-yellow-400 hover:to-blue-400 transition-all duration-300 group relative overflow-hidden"

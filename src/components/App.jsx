@@ -194,7 +194,7 @@ function App() {
       {[
                 { name: 'Docker', icon: 'https://github.com/01warrior/portfolio/blob/main/assets/docker.png?raw=true',color: 'from-blue-600 to-cyan-400', mastery: 85 },
                 { name: 'Flutter', icon: 'https://github.com/01warrior/portfolio/blob/main/assets/flutter.png?raw=true',color: 'from-blue-500 to-teal-400', mastery: 98 },
-                { name: 'SpringBoot', icon: 'https://github.com/01warrior/portfolio/blob/main/assets/spring.png?raw=true', color: 'from-green-600 to-lime-400', mastery: 70 },
+                { name: 'SpringBoot', icon: 'https://github.com/01warrior/portfolio/blob/main/assets/spring.png?raw=true', color: 'from-green-600 to-lime-400', mastery: 68 },
                 { name: 'React.js', icon: 'https://github.com/01warrior/portfolio/blob/main/assets/react.png?raw=true',  color: 'from-cyan-400 to-blue-600', mastery: 90 },
                 { name: 'TailWind', icon: 'https://github.com/01warrior/portfolio/blob/main/assets/tailwindcss.png?raw=true',  color: 'from-cyan-500 to-sky-600', mastery: 95 },
                 { name: 'Python', icon: 'https://github.com/01warrior/portfolio/blob/main/assets/python.png?raw=true',color: 'from-blue-600 to-yellow-400', mastery: 60 },
@@ -205,9 +205,9 @@ function App() {
                 { name: 'MySQL', icon: 'https://github.com/01warrior/portfolio/blob/main/assets/mysql.png?raw=true', color: 'from-blue-500 to-orange-400', mastery: 80 },
                 { name: 'Node.Js', icon: 'https://raw.githubusercontent.com/01warrior/portfolio/18aff3fa26c9d423d48d58c8de82a4fe00d8829f/assets/nodejs.svg',color: 'from-green-700 to-lime-500', mastery:80 },
                 { name: 'Git', icon: 'https://github.com/01warrior/portfolio/blob/main/assets/git.png?raw=true',color: 'from-green-700 to-lime-500', mastery:80 },
-                { name: 'GitHub', icon: 'https://github.com/01warrior/portfolio/blob/main/assets/Github.png?raw=true', mastery:87 },
-                { name: 'Postman', icon: 'https://github.com/01warrior/portfolio/blob/main/assets/postmanf.png?raw=true', mastery:87 },
-                { name: 'Mongodb', icon: 'https://github.com/01warrior/portfolio/blob/main/assets/mongodb.png?raw=true', mastery:87 },
+                { name: 'GitHub', icon: 'https://github.com/01warrior/portfolio/blob/main/assets/Github.png?raw=true',color: 'from-green-700 to-lime-500', mastery:90 },
+                { name: 'Postman', icon: 'https://github.com/01warrior/portfolio/blob/main/assets/postmanf.png?raw=true',color: 'from-green-700 to-lime-500', mastery:98 },
+                { name: 'Mongodb', icon: 'https://github.com/01warrior/portfolio/blob/main/assets/mongodb.png?raw=true',color: 'from-green-700 to-lime-500', mastery:80 },
               ].map((skill, index) => (
         <motion.div 
           key={index}
@@ -278,6 +278,26 @@ function App() {
 
           <h3 className="text-xl font-semibold mb-2">Site de media</h3>
           <p className="text-gray-400">Site de media Reflet info</p>
+      </div>
+
+      <div className="bg-gray-700/50 rounded-lg p-6 transition-all duration-300 hover:bg-gray-700/70 relative glow-effect">
+        {/* Conteneur d'image avec overflow hidden */}
+          <div className="h-48 w-full mb-4 rounded-lg overflow-hidden relative">
+          <img 
+            src="https://soumaila-savadogo.omnia-elearning.com/wp-content/uploads/2024/03/Capture-decran-2023-04-10-133548.png" // Chemin relatif depuis le dossier public
+            alt="Projet React" 
+            className="w-full h-full object-cover object-center transition-transform duration-300 hover:scale-105"
+            loading="lazy"
+          />
+          
+          {/* Overlay au survol */}
+          <div className="absolute inset-0 bg-black/50 opacity-0 hover:opacity-100 transition-opacity flex items-center justify-center">
+            <span className="text-white font-bold text-lg"><a href="https://scoopcaburkinamine.com/">Voir le projet →</a></span>
+          </div>
+          </div>
+
+          <h3 className="text-xl font-semibold mb-2">Scoop-Ca Burkina Mine</h3>
+          <p className="text-gray-400">SOCIÉTÉ DE COOPÉRATIVE AVEC CONSEIL D'ADMINISTRATION / BURKINA MINE ( SCOOP - CA / BM )</p>
       </div>
 
       <div className="bg-gray-700/50 rounded-lg p-6 transition-all duration-300 hover:bg-gray-700/70 relative glow-effect">

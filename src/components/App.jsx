@@ -109,6 +109,10 @@ function App() {
       href="https://drive.google.com/uc?export=download&id=1G5HeypmtCJVksBTsUK7jetFZG5Z3S0xT"
       download
       className="px-8 py-4 rounded-full bg-gradient-to-r from-blue-400 to-yellow-400 hover:from-yellow-400 hover:to-blue-400 transition-all duration-300 group relative overflow-hidden"
+      onClick={(e) => {
+      e.preventDefault(); // Empêche le comportement par défaut
+      window.location.href = "https://drive.google.com/uc?export=download&id=1G5HeypmtCJVksBTsUK7jetFZG5Z3S0xT";
+  }}
     >
       {/* Effet de lumière au survol */}
       <div className="absolute inset-0 bg-white/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300 blur-md"></div>

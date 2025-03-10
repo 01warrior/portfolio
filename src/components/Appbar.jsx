@@ -82,9 +82,9 @@ function Appbar() {
             onClick={() => setIsMenuOpen(!isMenuOpen)}
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.9 }}
-            className="lg:hidden text-gray-300 hover:text-purple-400"
+            className="lg:hidden text-gray-300 hover:text-yellow-400"
           >
-            <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
             </svg>
           </motion.button>
@@ -97,12 +97,13 @@ function Appbar() {
           variants={menuVariants}
           className="lg:hidden absolute top-16 left-0 right-0 bg-gray-900/95 backdrop-blur-sm overflow-hidden"
         >
-          <div className="flex flex-col py-4">
+          <div className="flex flex-col space-y-4 p-6">
             {navLinks.map((link) => (
               <motion.div
                 key={link.id}
                 whileHover={{ x: 10 }}
                 whileTap={{ scale: 0.95 }}
+                className="rounded-lg overflow-hidden"
               >
                 <Link
                   to={link.id}
@@ -110,7 +111,7 @@ function Appbar() {
                   smooth={true}
                   duration={500}
                   onClick={() => setIsMenuOpen(false)}
-                  className="px-4 py-3 text-gray-300 hover:text-yellow-400 hover:bg-gray-800/50 transition-all"
+                  className="block px-6 py-4 text-gray-300 hover:text-yellow-400 hover:bg-gray-800/50 transition-all rounded-lg border border-gray-700/50 hover:border-yellow-400/50 shadow-lg"
                 >
                   {link.label}
                 </Link>

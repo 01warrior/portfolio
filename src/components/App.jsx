@@ -100,6 +100,28 @@ function App() {
     
         </div>
       </MacScreenMockup>
+
+      {/* bouton telecharger cv */}
+    <div className="mt-12 flex justify-center">
+    <motion.a
+      whileHover={{ scale: 1.05 }}
+      whileTap={{ scale: 0.95 }}
+      href="https://drive.google.com/uc?export=download&id=1G5HeypmtCJVksBTsUK7jetFZG5Z3S0xT"
+      download
+      className="px-8 py-4 rounded-full bg-gradient-to-r from-blue-400 to-yellow-400 hover:from-yellow-400 hover:to-blue-400 transition-all duration-300 group relative overflow-hidden"
+    >
+      {/* Effet de lumière au survol */}
+      <div className="absolute inset-0 bg-white/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300 blur-md"></div>
+      <div className="flex items-center gap-3 relative">
+        <HiDownload className="h-6 w-6 text-slate-900" />
+        <span className="text-lg font-bold bg-clip-text text-transparent bg-gradient-to-r from-slate-900 to-slate-800">
+          Telecharger Fun
+        </span>
+        <span className="text-slate-900 text-sm">(PDF, 849Ko)</span>
+      </div>
+    </motion.a>
+    </div>
+
     </div>
   </div>
 </section>

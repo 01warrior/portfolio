@@ -4,6 +4,7 @@ import MacScreenMockup from './MacScreenMockup';
 import AnimatedText from './AnimatedText';
 import { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
+import ScrollToTop from './ScrollToTop';
 
 import { FiMail, FiPhone } from "react-icons/fi"; // Feather Icons
 import { FaGithub, FaLinkedin, FaFacebook } from "react-icons/fa"; // Font Awesome
@@ -71,6 +72,8 @@ function App() {
   return (
     <div className="bg-gray-900 text-white">
       <Appbar />
+      
+      <ScrollToTop />
 
   <main>
   <section id="presentation" className="pt-32 pb-20 lg:py-20 bg-black relative overflow-hidden min-h-screen">

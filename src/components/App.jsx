@@ -56,8 +56,8 @@ export function CursorEffect() {
         style={{
           left: `${position.x}px`,
           top: `${position.y}px`,
-          width: '6px',
-          height: '6px',
+          width: '10px',
+          height: '10px',
           background: '#fff',
           borderRadius: '50%',
           mixBlendMode: 'difference'

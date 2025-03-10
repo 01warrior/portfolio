@@ -19,8 +19,8 @@ function Appbar() {
   const navLinks = [
     { id: 'presentation', label: 'Accueil' },
     { id: 'about', label: 'A propos' },
-    { id: 'projets', label: 'Projets' },
     { id: 'competences', label: 'Compétences' },
+    { id: 'projets', label: 'Projets' },
     { id: 'contact', label: 'Contact' }
   ];
 

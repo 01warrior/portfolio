@@ -212,7 +212,7 @@
 }
 
 .card-glow:hover::after {
+  animation: glowPulse 0.5s ease-in-out;
   background: linear-gradient(45deg, #60a5fa, #fbbf24);
-  filter: blur(15px);
   z-index: -1;
 }

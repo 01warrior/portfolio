@@ -216,7 +216,7 @@ function App() {
         <motion.div 
           key={index}
           whileHover={{ scale: 1.05, rotate: [0, -2, 2, 0] }}
-          className="aspect-square flex flex-col items-center justify-center p-6 rounded-2xl bg-gradient-to-br backdrop-blur-xl border border-white/10"
+          className="card-glow aspect-square flex flex-col items-center justify-center p-6 rounded-2xl bg-gradient-to-br backdrop-blur-xl border border-white/10"
         >
           <div className={`text-6xl mb-4 bg-gradient-to-r ${skill.color} bg-clip-text text-transparent`}>
             <img src={skill.icon} alt=""/>

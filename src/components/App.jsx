@@ -226,7 +226,7 @@ function App() {
 
   {/* Curseur clignotant */}
     <motion.div
-      className="absolute bottom-14 right-10 w-3 h-6 bg-yellow-400"
+      className="absolute bottom-14 right-10 w-7 h-6 bg-yellow-400"
       animate={{
         opacity: [1, 0]
       }}

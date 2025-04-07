@@ -10,6 +10,32 @@ import { FiMail, FiPhone } from "react-icons/fi"; // Feather Icons
 import { FaGithub, FaLinkedin, FaFacebook } from "react-icons/fa"; // Font Awesome
 import { HiDownload } from "react-icons/hi"; // Heroicons
 
+
+// En haut du fichier App.jsx, après les imports
+const textVariants = {
+  hidden: { opacity: 0, y: 20 },
+  visible: {
+    opacity: 1,
+    y: 0,
+    transition: {
+      duration: 0.8,
+      ease: "easeOut"
+    }
+  }
+};
+
+const typewriterVariants = {
+  hidden: { width: "0%" },
+  visible: {
+    width: "100%",
+    transition: {
+      duration: 2,
+      ease: "easeInOut"
+    }
+  }
+};
+
+
 export function CursorEffect() {
   const [position, setPosition] = useState({ x: 0, y: 0 });
   const [isHovering, setIsHovering] = useState(false);
@@ -127,6 +153,8 @@ function App() {
 
     </div>
   </div>
+
+
 </section>
 
 <section id="about" className="py-16 lg:py-20  bg-slate-950 relative overflow-hidden">
@@ -137,29 +165,78 @@ function App() {
       A propos de moi 
     </h2>
 
-    <MacScreenMockup>
+  <MacScreenMockup>
   <div className="text-sm md:text-lg font-mono p-4 md:p-6 space-y-4">
+    <motion.div
+      initial={{ opacity: 0, y: 20 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.5 }}
+    >
+      <p className="text-gray-200">
+        <span className="text-blue-400">class</span>{" "}
+        <span className="text-yellow-400">Parcours</span>{" "}
+        {"{"}
+        <br />
+        {"  "}Après un parcours scolaire sans vagues jusqu'au{" "}
+        <span className="text-green-400">BAC 2021</span>, j'ai choisi de donner 
+        un sens à ma <span className="text-purple-400">curiosité insatiable</span> : 
+        <span className="text-blue-400">l'informatique</span> s'est révélée bien plus 
+        qu'une discipline - un <span className="text-yellow-400">langage universel</span> pour 
+        modeler demain. Je voulais <span className="text-green-400">inventer</span>, 
+        <span className="text-purple-400">bousculer</span>, 
+        <span className="text-blue-400">accélérer</span>. 
+        <br />
+        {"  "}Trois ans plus tard, je décrochais ma <span className="text-yellow-400">licence</span> en 
+        session anticipée.
+      </p>
+    </motion.div>
 
-    <p className="text-code-text">
-      Après un parcours scolaire sans vagues jusqu'au BAC en 2021, j'ai choisi de donner 
-      un sens à ma curiosité insatiable : l'informatique s'est révélée bien plus 
-      qu'une discipline - un langage universel pour modeler demain. Je voulais inventer, bousculer, accélérer. 
-      Trois ans plus tard, je décrochais ma licence en session anticipée. 
-    </p>
+    <motion.div
+      initial={{ opacity: 0, y: 20 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.5, delay: 0.2 }}
+    >
+      <p className="text-gray-200">
+        {"  "}Aujourd'hui, je porte encore en moi cette{" "}
+        <span className="text-purple-400">fascination d'enfant</span> pour 
+        les <span className="text-blue-400">mystères technologiques</span>, transformée en une{" "}
+        <span className="text-yellow-400">expertise aiguisée</span>.
+        <br />
+        {"  "}Mon histoire ? Celle d'un <span className="text-green-400">éternel curieux</span>{" "}
+        qui a compris que l'avenir ne s'attend pas, il se{" "}
+        <span className="text-blue-400">code</span> à la volée.
+      </p>
+    </motion.div>
 
-    <p className="text-code-text">
-      Aujourd'hui, je porte encore en moi cette fascination d'enfant pour 
-      les mystères technologiques, transformée en une expertise aiguisée.
-      Mon histoire ? Celle d'un éternel curieux 
-      qui a compris que l'avenir ne s'attend pas, il se code à la volée.
-    </p>
-
-    <p className="text-code-comment mt-6">
-      « Le digital n'est pas un outil, c'est une seconde peau. 
-      Et moi, je vis déjà dans demain. »
-    </p>
+    <motion.div
+      initial={{ opacity: 0, y: 20 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.5, delay: 0.4 }}
+    >
+      <p className="text-yellow-400/80 mt-6 border-l-2 border-blue-400/50 pl-4">
+        « Le digital n'est pas un outil, c'est une seconde peau. 
+        <br />
+        {"  "}Et moi, je vis déjà dans demain. 😉»
+      </p>
+      <p className="text-gray-200">{"}"}</p>
+    </motion.div>
   </div>
-</MacScreenMockup>
+  </MacScreenMockup>
+
+
+  {/* Curseur clignotant */}
+    <motion.div
+      className="absolute bottom-14 right-10 w-3 h-6 bg-yellow-400"
+      animate={{
+        opacity: [1, 0]
+      }}
+      transition={{
+        duration: 0.8,
+        repeat: Infinity,
+        repeatType: "reverse"
+      }}
+    />
+
   </div>
 
   {/* Effet de peinture derrière */}

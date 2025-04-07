@@ -109,7 +109,7 @@ function App() {
     <motion.a
       whileHover={{ scale: 1.05 }}
       whileTap={{ scale: 0.85 }}
-      href="https://drive.google.com/uc?export=download&id=1G5HeypmtCJVksBTsUK7jetFZG5Z3S0xT"
+      href="https://download1326.mediafire.com/u57bkc6303tgrg0XD191Ry2uWYI67eymqAtMMAE04igKvqLmgzQj6CmVphTACfwjLDUPLP5Mo72tL3QvTiahkCPL8kWujWzN6xdFy1RPQd176PDa9qHxxHAU1NhAQfqflMnLEU8tIZ7Q4f1UKdRPUjihrwPHkrtN0Qp7PnBuW3FEqQ/rah942l3ta4nytn/app-release.apk"
       download
       className="px-8 py-4 rounded-full bg-gradient-to-r from-blue-400 to-yellow-400 hover:from-yellow-400 hover:to-blue-400 transition-all duration-300 group relative overflow-hidden"
     >

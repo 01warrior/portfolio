@@ -11,31 +11,6 @@ import { FaGithub, FaLinkedin, FaFacebook } from "react-icons/fa"; // Font Aweso
 import { HiDownload } from "react-icons/hi"; // Heroicons
 
 
-// En haut du fichier App.jsx, après les imports
-const textVariants = {
-  hidden: { opacity: 0, y: 20 },
-  visible: {
-    opacity: 1,
-    y: 0,
-    transition: {
-      duration: 0.8,
-      ease: "easeOut"
-    }
-  }
-};
-
-const typewriterVariants = {
-  hidden: { width: "0%" },
-  visible: {
-    width: "100%",
-    transition: {
-      duration: 2,
-      ease: "easeInOut"
-    }
-  }
-};
-
-
 export function CursorEffect() {
   const [position, setPosition] = useState({ x: 0, y: 0 });
   const [isHovering, setIsHovering] = useState(false);
@@ -433,11 +408,11 @@ function App() {
           
           {/* Overlay au survol */}
           <div className="absolute inset-0 bg-black/50 opacity-0 hover:opacity-100 transition-opacity flex items-center justify-center">
-            <span className="text-white font-bold text-lg"><a href="https://www.linkedin.com/posts/savadogo-souma%C3%AFla-6694b9243_flutter-ia-intelligenceartificielle-activity-7168223963515494400-QBZz?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADxom3EBkG-pvdKGHK0xa24uEv1gqz7YBqs">Voir le projet →</a></span>
+            <span className="text-white font-bold text-lg"><a href="https://download1527.mediafire.com/crnlmep0tk1gZLOyMLJRSjfjXB_dPeji9QwW9nUw_gxuws9TNCcFar_qDk7et3QWbqlyhCBam0xH_hHLHADD1inytmVljx_ECCKL56j2MUgDzl4KecdGO3Vz5TeQ-ntKCCaoiV02PvPkhm55DdVWu5n_TGchbt2EUUx-eoj8DkDuGw/c9zxdwgwfbf1wkg/Docteur.apk">Telecharger L'app →</a></span>
           </div>
           </div>
 
-          <h3 className="text-xl font-semibold mb-2">Docteur</h3>
+          <h3 className="text-xl font-semibold mb-2">Docteur AI</h3>
           <p className="text-gray-400">Application mobile avec Flutter une IA medecin avec Flutter,Dart Supabase</p>
       </div>
 
@@ -494,7 +469,7 @@ function App() {
           
           {/* Overlay au survol */}
           <div className="absolute inset-0 bg-black/50 opacity-0 hover:opacity-100 transition-opacity flex items-center justify-center">
-            <span className="text-white font-bold text-lg"><a href="https://www.linkedin.com/posts/savadogo-souma%C3%AFla-6694b9243_flutter-mobiledev-ai-activity-7286810396080939008-x-9Q?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADxom3EBkG-pvdKGHK0xa24uEv1gqz7YBqs">Voir le projet →</a></span>
+            <span className="text-white font-bold text-lg"><a href="https://download1339.mediafire.com/0dpbfc1wslegs-FLy0GajV0jFp2whAFiTIuXnKn-Onb2CvIs5-hiUfspZ6joBiPIN_mdutUiNURvEmZXBBI8iifQC8lBUy8XyMc61qZHslaEAY0SHaXmxtiLXYMLlGA_ZvHlAwychbhCCMXHCfmhdrFdJwI-vbJebALPGAz5Fjyl_A/dbx76n60syz6v67/app-release.apk">Telecharger l'app →</a></span>
           </div>
           </div>
 

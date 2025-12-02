@@ -25,8 +25,8 @@ function Appbar() {
   ];
 
   const menuVariants = {
-    open: { opacity: 1, y: 0 },
-    closed: { opacity: 0, y: -20 }
+    open: { opacity: 1, x: 0 },
+    closed: { opacity: 0, x: "100%" }
   };
 
   return (
@@ -85,36 +85,57 @@ function Appbar() {
         </div>
 
         {/* Menu Mobile */}
-        {isMenuOpen && ( // Ajout d'un rendu conditionnel
-          <motion.div
-            initial="closed"
-            animate={isMenuOpen ? "open" : "closed"}
-            variants={menuVariants}
-            className="lg:hidden absolute top-16 left-0 right-0 bg-gray-900/100 backdrop-blur-sm"
-          >
-            <div className="flex flex-col space-y-4 p-6">
-              {navLinks.map((link) => (
-                <motion.div
-                  key={link.id}
-                  whileHover={{ x: 10 }}
-                  whileTap={{ scale: 0.95 }}
-                  className="rounded-lg overflow-hidden"
+        {isMenuOpen && (
+          <>
+            {/* Overlay */}
+            <div
+              className="lg:hidden fixed inset-0 bg-black/50 backdrop-blur-sm z-40"
+              onClick={() => setIsMenuOpen(false)}
+            />
+
+            {/* Menu Panel */}
+            <motion.div
+              initial="closed"
+              animate={isMenuOpen ? "open" : "closed"}
+              variants={menuVariants}
+              transition={{ type: "spring", stiffness: 300, damping: 30 }}
+              className="lg:hidden fixed top-0 right-0 h-full w-64 bg-gray-900 border-l border-gray-800 shadow-2xl z-50 p-6"
+            >
+              <div className="flex justify-end mb-8">
+                <button
+                  onClick={() => setIsMenuOpen(false)}
+                  className="text-gray-400 hover:text-white"
                 >
-                  <Link
-                    to={link.id}
-                    spy={true}
-                    smooth={true}
-                    duration={500}
-                    onClick={() => setIsMenuOpen(false)}
-                    className="block px-6 py-4 text-gray-300 hover:text-white hover:bg-gray-800/50 transition-all rounded-lg border border-gray-700/50 hover:border-white/10 shadow-lg"
-                    activeClass="!text-white !border-white/20 !bg-gray-800"
+                  <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+                  </svg>
+                </button>
+              </div>
+
+              <div className="flex flex-col space-y-4">
+                {navLinks.map((link) => (
+                  <motion.div
+                    key={link.id}
+                    whileHover={{ x: 5 }}
+                    whileTap={{ scale: 0.95 }}
                   >
-                    {link.label}
-                  </Link>
-                </motion.div>
-              ))}
-            </div>
-          </motion.div>)}
+                    <Link
+                      to={link.id}
+                      spy={true}
+                      smooth={true}
+                      duration={500}
+                      onClick={() => setIsMenuOpen(false)}
+                      className="block px-4 py-3 text-gray-300 hover:text-white hover:bg-gray-800/50 rounded-lg transition-all"
+                      activeClass="!text-white bg-gray-800 font-medium"
+                    >
+                      {link.label}
+                    </Link>
+                  </motion.div>
+                ))}
+              </div>
+            </motion.div>
+          </>
+        )}
       </div>
     </nav>
   );

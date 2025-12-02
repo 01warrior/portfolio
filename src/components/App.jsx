@@ -617,6 +617,10 @@ function App() {
 
         </section>
 
+        <footer className="py-8 bg-black text-center text-gray-400 text-sm">
+          <p>© {new Date().getFullYear()} Soumaila SAVADOGO - Tous droits réservés</p>
+        </footer>
+
       </main>
     </div>
   );

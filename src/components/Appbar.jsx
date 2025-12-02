@@ -33,11 +33,11 @@ function Appbar() {
     <nav className={`w-full z-50 bg-gray-900/80 backdrop-blur-sm border-b border-gray-700 font-Poppins fixed top-0 transition-all duration-300 ${isScrolled ? 'shadow-xl' : 'shadow-none'}`}>
       <div className="container mx-auto px-4">
         <div className="flex justify-between items-center h-16">
-          
+
           {/* Logo */}
-          <motion.span 
+          <motion.span
             whileHover={{ scale: 1.05 }}
-            className="text-xl font-bold bg-gradient-to-r from-blue-400 to-yellow-400 bg-clip-text text-transparent"
+            className="text-xl font-bold text-white"
           >
             S.SAVADOGO
           </motion.span>
@@ -56,23 +56,16 @@ function Appbar() {
                   smooth={true}
                   offset={-70}
                   duration={800}
-                  className="relative px-4 py-2 overflow-hidden group"
-                  activeClass="active-link"
+                  className="relative px-4 py-2 overflow-hidden group rounded-full transition-all duration-300"
+                  activeClass="bg-white/10 text-white font-medium"
                 >
-                  <span className="relative z-10 text-gray-300 group-hover:text-yellow-400 transition-colors">
+                  <span className="relative z-10 text-gray-300 group-hover:text-white transition-colors">
                     {link.label}
                   </span>
-                  
-                  <div className="absolute inset-0 bg-gradient-to-r from-blue-400/20 to-purple-500/20 
+
+                  <div className="absolute inset-0 bg-white/5 
                                 opacity-0 group-hover:opacity-100 transition-opacity duration-300
-                                rounded-full scale-75 group-hover:scale-100" />
-                  
-                  <motion.div
-                    className="absolute bottom-0 left-0 right-0 w-full h-0.5 bg-purple-400"
-                    initial={{ scaleX: 0 }}
-                    animate={{ scaleX: link.isActive ? 1 : 0 }}
-                    transition={{ duration: 0.3 }}
-                  />
+                                rounded-full" />
                 </Link>
               </motion.div>
             ))}
@@ -83,7 +76,7 @@ function Appbar() {
             onClick={() => setIsMenuOpen(!isMenuOpen)}
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.9 }}
-            className="lg:hidden text-gray-300 hover:text-yellow-400"
+            className="lg:hidden text-gray-300 hover:text-white"
           >
             <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
@@ -113,8 +106,8 @@ function Appbar() {
                     smooth={true}
                     duration={500}
                     onClick={() => setIsMenuOpen(false)}
-                    className="block px-6 py-4 text-gray-300 hover:text-yellow-400 hover:bg-gray-800/50 transition-all rounded-lg border border-gray-700/50 hover:border-yellow-400/50 shadow-lg"
-                    activeClass="!text-yellow-400 !border-yellow-400/50 !bg-gray-800/50"
+                    className="block px-6 py-4 text-gray-300 hover:text-white hover:bg-gray-800/50 transition-all rounded-lg border border-gray-700/50 hover:border-white/10 shadow-lg"
+                    activeClass="!text-white !border-white/20 !bg-gray-800"
                   >
                     {link.label}
                   </Link>
